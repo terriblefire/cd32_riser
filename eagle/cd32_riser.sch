@@ -14883,6 +14883,11 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="10k"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BAT54" device="" package3d_urn="urn:adsk.eagle:package:43389/2"/>
+<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -17879,6 +17884,11 @@ PA2-&gt; H  "Basic Board"</text>
 </instance>
 <instance part="XC9572XL" gate="XC9572XL-VQ64" x="106.68" y="86.36" rot="R180"/>
 <instance part="R1" gate="G$1" x="43.18" y="157.48" rot="R90"/>
+<instance part="C17" gate="G$1" x="142.24" y="170.18"/>
+<instance part="C18" gate="G$1" x="152.4" y="170.18"/>
+<instance part="C19" gate="G$1" x="162.56" y="170.18"/>
+<instance part="C20" gate="G$1" x="172.72" y="170.18"/>
+<instance part="C21" gate="G$1" x="182.88" y="170.18"/>
 </instances>
 <busses>
 <bus name="A[0..31],AB,AB_EXT,_ACTIVE,AG,AG_EXT,AGND,AR,AR_EXT,_AS,_AVEC,_BEER,_BLANK,CCK_B,CLK_17MHZ,_CPU_BG,_CPU_BR,CPUCLK_A,_CSYNC,D[0..31],DA_BCLK,DA_DATA,DA_LRCLK,DB,DG,DI,_DKRD,_DKWD,DKWE,DR,_DS,_DSACK_0,_DSACK_1,_EXP_BG,_EXP_BR,_EXT_AUDIO,_EXT_VIDEO,FC[0..2],_FIRE0,_FIRE1,GND,_HLT,_HSYNC,_INT2,_INT6,_IPL[0..2],_KB_CLOCK,_KB_DATA,_LED,LEFT,LEFT_EXT,_MUTE,NC,_NTSC,PIXELCLK,_PIXELSW,_PIXELSW_EXT,_PUNT,_RESET,RIGHT,RIGHT_EXT,_RMC,_RST,R_W,_RXD,SIZ[0..1],_TXD,VCC,VCC33,VCC12V,VGND,_VSYNC,XCLK,_XCLKEN,PUNT_IN,PUNT_OUT,SPI_MOSI,SPI_MISO,SPI_CK,SPI_NSS,UART5_RX,UART5_TX">
@@ -17918,6 +17928,27 @@ PA2-&gt; H  "Basic Board"</text>
 <wire x1="12.7" y1="96.52" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
 <label x="33.02" y="96.52" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="157.48" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="157.48" x2="172.72" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="157.48" x2="162.56" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="157.48" x2="142.24" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="157.48" x2="142.24" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="165.1" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
+<junction x="152.4" y="157.48"/>
+<pinref part="C19" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="165.1" x2="162.56" y2="157.48" width="0.1524" layer="91"/>
+<junction x="162.56" y="157.48"/>
+<pinref part="C20" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="165.1" x2="172.72" y2="157.48" width="0.1524" layer="91"/>
+<junction x="172.72" y="157.48"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="165.1" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
+<junction x="182.88" y="157.48"/>
+</segment>
 </net>
 <net name="VCC33" class="0">
 <segment>
@@ -17945,6 +17976,26 @@ PA2-&gt; H  "Basic Board"</text>
 <pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="VCCIO@1"/>
 <wire x1="195.58" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
 <label x="165.1" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="180.34" x2="142.24" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="180.34" x2="152.4" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="162.56" y1="180.34" x2="162.56" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="172.72" y1="180.34" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C20" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="182.88" y1="180.34" x2="182.88" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C21" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="TCK" class="0">
