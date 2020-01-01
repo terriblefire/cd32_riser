@@ -14799,6 +14799,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="XC9572XL" library="terriblefire" deviceset="XC9572XL-VQ64" device=""/>
 <part name="BT1" library="SparkFun-Batteries" deviceset="BATTERY" device="-20MM_PTH"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="10k"/>
+<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17257,6 +17259,13 @@ PA2-&gt; H  "Basic Board"</text>
 <attribute name="VALUE" x="78.74" y="83.82" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="BT1" gate="G$1" x="210.82" y="172.72" rot="R90"/>
+<instance part="R4" gate="G$1" x="208.28" y="93.98" rot="R180">
+<attribute name="NAME" x="212.09" y="92.4814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="212.09" y="97.282" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="220.98" y="93.98" rot="R270">
+<attribute name="VALUE" x="224.155" y="95.885" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 <bus name="A[0..31],AB,AB_EXT,_ACTIVE,AG,AG_EXT,AGND,AR,AR_EXT,_AS,_AVEC,_BEER,_BLANK,CCK_B,CLK_17MHZ,_CPU_BG,_CPU_BR,CPUCLK_A,_CSYNC,D[0..31],DA_BCLK,DA_DATA,DA_LRCLK,DB,DG,DI,_DKRD,_DKWD,DKWE,DR,_DS,_DSACK_0,_DSACK_1,_EXP_BG,_EXP_BR,_EXT_AUDIO,_EXT_VIDEO,FC[0..2],_FIRE0,_FIRE1,GND,_HLT,_HSYNC,_INT2,_INT6,_IPL[0..2],_KB_CLOCK,_KB_DATA,_LED,LEFT,LEFT_EXT,_MUTE,NC,_NTSC,PIXELCLK,_PIXELSW,_PIXELSW_EXT,_PUNT,_RESET,RIGHT,RIGHT_EXT,_RMC,_RST,R_W,_RXD,SIZ[0..1],_TXD,VCC,VCC33,VCC12V,VGND,_VSYNC,XCLK,_XCLKEN,PUNT_IN,PUNT_OUT,SPI_MOSI,SPI_MISO,SPI_CK,SPI_NSS,UART5_RX,UART5_TX">
@@ -17586,6 +17595,11 @@ PA2-&gt; H  "Basic Board"</text>
 <wire x1="121.92" y1="35.56" x2="127" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="93.98" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="VCC"/>
+</segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
@@ -17738,6 +17752,13 @@ PA2-&gt; H  "Basic Board"</text>
 <pinref part="U1" gate="PORTC_H" pin="PC12"/>
 <wire x1="0" y1="25.4" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
 <label x="38.1" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="203.2" y1="93.98" x2="195.58" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
