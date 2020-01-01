@@ -1,0 +1,70 @@
+# Copyright (C) 2016-2020, Stephen J. Leary
+# All rights reserved.
+#
+# This file is part of CD32 USB Riser
+#
+# This is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with CD32 Riser. If not, see <http://www.gnu.org/licenses/>.
+
+NET "A<0>"      LOC="27";
+NET "A<1>"      LOC="25";
+NET "A<2>"      LOC="31";
+NET "A<3>"      LOC="32";
+NET "A<4>"      LOC="33";
+NET "A<5>"      LOC="34";
+NET "A<6>"      LOC="35";
+NET "A<7>"      LOC="36";
+NET "A<8>"      LOC="38";
+NET "A<9>"      LOC="39";
+NET "A<10>"      LOC="40";
+NET "A<11>"      LOC="42";
+NET "A<12>"      LOC="43";
+NET "A<13>"      LOC="44";
+NET "A<14>"      LOC="45";
+NET "A<15>"      LOC="46";
+NET "A<16>"      LOC="47";
+NET "A<17>"      LOC="48";
+NET "A<18>"      LOC="57";
+NET "A<19>"      LOC="56";
+NET "A<20>"      LOC="51";
+NET "A<21>"      LOC="52";
+NET "A<22>"      LOC="50";
+NET "A<23>"      LOC="49";
+NET "CPUCLK_A"      LOC="15";
+NET "D<24>"      LOC="63";
+NET "D<25>"      LOC="61";
+NET "D<26>"      LOC="1";
+NET "D<27>"      LOC="60";
+NET "D<28>"      LOC="62";
+NET "D<29>"      LOC="59";
+NET "D<30>"      LOC="64";
+NET "D<31>"      LOC="58";
+NET "PUNT_IN"      LOC="13";
+NET "PUNT_OUT"      LOC="10";
+NET "R_W"      LOC="7";
+NET "SIZ<0>"      LOC="4";
+NET "SIZ<1>"      LOC="2";
+NET "SPI_CK"      LOC="20";
+NET "SPI_MISO"      LOC="19";
+NET "SPI_MOSI"      LOC="18";
+NET "SPI_NSS"      LOC="24";
+NET "UART5_RX"      LOC="22";
+NET "UART5_TX"      LOC="23";
+NET "AS20"      LOC="5";
+NET "DS20"      LOC="6";
+NET "DSACK<0>"      LOC="9";
+NET "DSACK<1>"      LOC="8";
+NET "KB_CLOCK"      LOC="11";
+NET "KB_DATA"      LOC="12";
+NET "RXD"      LOC="16";
+NET "TXD"      LOC="17";
