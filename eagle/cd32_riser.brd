@@ -1621,6 +1621,23 @@ MELF 0.10 W</description>
 <rectangle x1="0.6858" y1="-0.7112" x2="1.0414" y2="0.7112" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5999" x2="0.1999" y2="0.5999" layer="35"/>
 </package>
+<package name="M1206" urn="urn:adsk.eagle:footprint:23066/1" library_version="3">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+MELF 0.25 W</description>
+<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
+<wire x1="1.143" y1="0.8382" x2="-1.143" y2="0.8382" width="0.1524" layer="51"/>
+<wire x1="1.143" y1="-0.8382" x2="-1.143" y2="-0.8382" width="0.1524" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="2" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="2" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.9144" x2="-1.1176" y2="0.9144" layer="51"/>
+<rectangle x1="1.1176" y1="-0.9144" x2="1.7018" y2="0.9144" layer="51"/>
+<rectangle x1="-0.3" y1="-0.8001" x2="0.3" y2="0.8001" layer="35"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C0805" urn="urn:adsk.eagle:package:23617/2" type="model" library_version="3">
@@ -1634,6 +1651,13 @@ MELF 0.10 W</description>
 MELF 0.10 W</description>
 <packageinstances>
 <packageinstance name="M0805"/>
+</packageinstances>
+</package3d>
+<package3d name="M1206" urn="urn:adsk.eagle:package:23566/1" type="box" library_version="3">
+<description>RESISTOR
+MELF 0.25 W</description>
+<packageinstances>
+<packageinstance name="M1206"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2578,12 +2602,15 @@ design rules under a new name.</description>
 <attribute name="NAME" x="3.326496875" y="25.729325" size="0.8128" layer="25" ratio="18" rot="R270"/>
 <attribute name="VALUE" x="3.6153" y="19.061228125" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="XC9572XL(BUS)" library="terriblefire" package="VQ64" value="XC9572XL-VQ64" x="23.595984375" y="18.30703125" smashed="yes" rot="R135">
+<element name="XC9572XL" library="terriblefire" package="VQ64" value="XC9572XL-VQ64" x="23.595984375" y="18.30703125" smashed="yes" rot="R135">
 <attribute name="NAME" x="23.216878125" y="8.2054" size="1.397" layer="25" ratio="10" rot="R135"/>
 </element>
 <element name="BT1" library="SparkFun-Batteries" package="BATTCOM_20MM_PTH" value="" x="70.011784375" y="48.6445875" rot="R180">
 <attribute name="PROD_ID" value="BATT-09031" x="70.011784375" y="48.6445875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SF_SKU" value="PRT-00783" x="70.011784375" y="48.6445875" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="" x="72.65349375" y="20.299159375" rot="R180">
+<attribute name="SPICEPREFIX" value="R" x="72.65349375" y="20.299159375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 </elements>
 <signals>
@@ -2757,10 +2784,10 @@ design rules under a new name.</description>
 <via x="36.93305625" y="40.951103125" extent="1-16" drill="0.35"/>
 <wire x1="35.858303125" y1="57.476559375" x2="36.3565" y2="57.97475625" width="0.254" layer="16"/>
 <wire x1="36.3565" y1="57.97475625" x2="37.59375625" y2="57.97475625" width="0.254" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="41"/>
-<contactref element="XC9572XL(BUS)" pad="54"/>
-<contactref element="XC9572XL(BUS)" pad="14"/>
-<contactref element="XC9572XL(BUS)" pad="21"/>
+<contactref element="XC9572XL" pad="41"/>
+<contactref element="XC9572XL" pad="54"/>
+<contactref element="XC9572XL" pad="14"/>
+<contactref element="XC9572XL" pad="21"/>
 <wire x1="19.53011875" y1="22.019340625" x2="20.4589125" y2="21.090546875" width="0.1524" layer="1"/>
 <wire x1="20.4589125" y1="21.090546875" x2="20.4589125" y2="20.774115625" width="0.1524" layer="1"/>
 <via x="20.4589125" y="20.774115625" extent="1-16" drill="0.35"/>
@@ -2812,6 +2839,7 @@ design rules under a new name.</description>
 <wire x1="25.11248125" y1="57.9243" x2="25.11248125" y2="57.955515625" width="0.1524" layer="1"/>
 <wire x1="22.132809375" y1="58.0079875" x2="22.13193125" y2="58.008865625" width="0.1524" layer="1"/>
 <wire x1="22.13193125" y1="58.008865625" x2="22.13193125" y2="58.009246875" width="0.1524" layer="1"/>
+<contactref element="BT1" pad="2"/>
 </signal>
 <signal name="VCC">
 <contactref element="U$3" pad="P$24"/>
@@ -2877,8 +2905,12 @@ design rules under a new name.</description>
 <vertex x="7.384321875" y="36.907865625"/>
 </polygon>
 <wire x1="55.383525" y1="17.272178125" x2="55.764478125" y2="17.272178125" width="0.4064" layer="1"/>
-<wire x1="55.764478125" y1="17.272178125" x2="56.951915625" y2="16.084740625" width="0.4064" layer="1"/>
-<via x="56.951915625" y="16.084740625" extent="1-16" drill="0.35"/>
+<wire x1="55.764478125" y1="17.272178125" x2="56.951915625" y2="18.175584375" width="0.4064" layer="1"/>
+<via x="56.951915625" y="18.175584375" extent="1-16" drill="0.35"/>
+<contactref element="R1" pad="2"/>
+<wire x1="71.25349375" y1="20.299159375" x2="71.241609375" y2="20.31104375" width="0.1524" layer="1"/>
+<wire x1="71.241609375" y1="20.31104375" x2="69.443440625" y2="20.31104375" width="0.1524" layer="1"/>
+<via x="69.443440625" y="20.31104375" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="+12V">
 <contactref element="U$3" pad="P$23"/>
@@ -3015,7 +3047,7 @@ design rules under a new name.</description>
 <wire x1="85.79528125" y1="4.52751875" x2="85.79528125" y2="1.281215625" width="0.1524" layer="16"/>
 <wire x1="85.79528125" y1="1.281215625" x2="85.7651125" y2="1.251046875" width="0.1524" layer="16"/>
 <wire x1="84.82531875" y1="7.347771875" x2="84.82531875" y2="5.49748125" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="16"/>
+<contactref element="XC9572XL" pad="16"/>
 <wire x1="30.136721875" y1="17.06959375" x2="32.233728125" y2="14.9725875" width="0.1524" layer="1"/>
 <wire x1="32.233728125" y1="14.9725875" x2="60.6977375" y2="14.9725875" width="0.1524" layer="1"/>
 <wire x1="67.0771125" y1="28.3163" x2="67.60900625" y2="28.84819375" width="0.1524" layer="1"/>
@@ -3047,7 +3079,7 @@ design rules under a new name.</description>
 <wire x1="82.22570625" y1="9.8845625" x2="82.22570625" y2="27.262725" width="0.1524" layer="16"/>
 <wire x1="81.9551125" y1="7.030340625" x2="80.861640625" y2="8.1238125" width="0.1524" layer="1"/>
 <wire x1="81.9551125" y1="7.030340625" x2="81.9551125" y2="3.791046875" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="11"/>
+<contactref element="XC9572XL" pad="11"/>
 <wire x1="30.181203125" y1="13.489575" x2="28.368953125" y2="15.301825" width="0.1524" layer="1"/>
 <wire x1="80.861640625" y1="8.1238125" x2="80.861640625" y2="11.22844375" width="0.1524" layer="1"/>
 <wire x1="80.861640625" y1="11.22844375" x2="78.600509375" y2="13.489575" width="0.1524" layer="1"/>
@@ -3098,7 +3130,7 @@ design rules under a new name.</description>
 <wire x1="22.59531875" y1="31.378584375" x2="22.59531875" y2="28.89409375" width="0.1524" layer="16"/>
 <wire x1="23.875878125" y1="8.48320625" x2="23.875878125" y2="8.53028125" width="0.1524" layer="16"/>
 <wire x1="23.875878125" y1="8.53028125" x2="23.5351125" y2="8.871046875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="33"/>
+<contactref element="XC9572XL" pad="33"/>
 <wire x1="23.5351125" y1="35.56019375" x2="23.5351125" y2="32.24959375" width="0.1524" layer="1"/>
 <wire x1="23.8335125" y1="26.322734375" x2="22.358546875" y2="24.84776875" width="0.1524" layer="1"/>
 <wire x1="23.8335125" y1="28.862909375" x2="23.8335125" y2="26.322734375" width="0.1524" layer="1"/>
@@ -3175,7 +3207,7 @@ design rules under a new name.</description>
 <wire x1="81.0471125" y1="29.329275" x2="81.9233125" y2="28.453075" width="0.1524" layer="16"/>
 <wire x1="81.895496875" y1="35.500578125" x2="81.895496875" y2="31.704684375" width="0.1524" layer="16"/>
 <wire x1="81.877175" y1="8.948984375" x2="81.9551125" y2="8.871046875" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="12"/>
+<contactref element="XC9572XL" pad="12"/>
 <wire x1="28.72250625" y1="15.655378125" x2="30.39591875" y2="13.981965625" width="0.1524" layer="1"/>
 <wire x1="79.266246875" y1="13.981965625" x2="81.9062875" y2="11.341925" width="0.1524" layer="1"/>
 <wire x1="81.9062875" y1="11.341925" x2="81.9062875" y2="8.978096875" width="0.1524" layer="1"/>
@@ -3247,11 +3279,11 @@ design rules under a new name.</description>
 <contactref element="CN2" pad="P$100"/>
 <wire x1="67.9851125" y1="6.331046875" x2="67.9851125" y2="7.92298125" width="0.1524" layer="16"/>
 <wire x1="67.9851125" y1="7.92298125" x2="68.28351875" y2="8.2213875" width="0.1524" layer="16"/>
-<wire x1="68.28351875" y1="10.05610625" x2="68.28351875" y2="8.2213875" width="0.1524" layer="16"/>
 <wire x1="67.9851125" y1="33.02019375" x2="67.9851125" y2="30.195571875" width="0.1524" layer="16"/>
 <wire x1="67.9851125" y1="30.195571875" x2="69.25199375" y2="28.928690625" width="0.1524" layer="16"/>
-<wire x1="69.25199375" y1="11.02458125" x2="68.28351875" y2="10.05610625" width="0.1524" layer="16"/>
-<wire x1="69.25199375" y1="28.928690625" x2="69.25199375" y2="11.02458125" width="0.1524" layer="16"/>
+<wire x1="69.25199375" y1="26.49823125" x2="69.25199375" y2="28.928690625" width="0.1524" layer="16"/>
+<wire x1="68.28351875" y1="25.52975625" x2="69.25199375" y2="26.49823125" width="0.1524" layer="16"/>
+<wire x1="68.28351875" y1="8.2213875" x2="68.28351875" y2="25.52975625" width="0.1524" layer="16"/>
 </signal>
 <signal name="NC@4">
 <contactref element="CN1" pad="P$95"/>
@@ -3324,7 +3356,7 @@ design rules under a new name.</description>
 <wire x1="85.7651125" y1="29.2243" x2="85.7651125" y2="33.02019375" width="0.1524" layer="16"/>
 <wire x1="86.09531875" y1="26.98629375" x2="86.6731125" y2="27.5640875" width="0.1524" layer="16"/>
 <wire x1="86.6731125" y1="28.3163" x2="85.7651125" y2="29.2243" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="17"/>
+<contactref element="XC9572XL" pad="17"/>
 <wire x1="40.9531125" y1="27.5640875" x2="40.9531125" y2="27.799946875" width="0.1524" layer="1"/>
 <wire x1="45.50121875" y1="32.11219375" x2="46.0331125" y2="32.6440875" width="0.1524" layer="1"/>
 <wire x1="46.0331125" y1="32.6440875" x2="46.0331125" y2="32.879946875" width="0.1524" layer="1"/>
@@ -3366,7 +3398,7 @@ design rules under a new name.</description>
 <wire x1="60.3651125" y1="29.9991125" x2="59.42531875" y2="29.05931875" width="0.1524" layer="16"/>
 <wire x1="60.3651125" y1="9.892496875" x2="59.42531875" y2="10.832290625" width="0.1524" layer="16"/>
 <wire x1="59.42531875" y1="10.832290625" x2="59.42531875" y2="29.05931875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="4"/>
+<contactref element="XC9572XL" pad="4"/>
 <wire x1="25.89408125" y1="12.816696875" x2="27.851790625" y2="10.8589875" width="0.1524" layer="1"/>
 <wire x1="25.89408125" y1="12.816696875" x2="25.89408125" y2="12.826953125" width="0.1524" layer="1"/>
 <wire x1="27.851790625" y1="10.8589875" x2="55.562409375" y2="10.8589875" width="0.1524" layer="1"/>
@@ -3402,7 +3434,8 @@ design rules under a new name.</description>
 <wire x1="71.7633125" y1="28.453075" x2="71.7633125" y2="27.4273125" width="0.1524" layer="16"/>
 <wire x1="71.7633125" y1="27.4273125" x2="71.1855125" y2="26.8495125" width="0.1524" layer="16"/>
 <wire x1="71.1855125" y1="9.480646875" x2="71.7951125" y2="8.871046875" width="0.1524" layer="16"/>
-<wire x1="71.1855125" y1="26.8495125" x2="71.1855125" y2="9.480646875" width="0.1524" layer="16"/>
+<wire x1="71.1855125" y1="26.8495125" x2="71.1855125" y2="20.31104375" width="0.1524" layer="16"/>
+<wire x1="71.1855125" y1="20.31104375" x2="71.1855125" y2="9.480646875" width="0.1524" layer="16"/>
 <wire x1="70.886271875" y1="31.4887" x2="71.7951125" y2="32.397540625" width="0.1524" layer="16"/>
 <wire x1="71.7951125" y1="32.397540625" x2="71.7951125" y2="35.56019375" width="0.1524" layer="16"/>
 </signal>
@@ -3471,7 +3504,7 @@ design rules under a new name.</description>
 <wire x1="62.9051125" y1="6.331046875" x2="62.40665625" y2="6.829503125" width="0.1524" layer="1"/>
 <wire x1="62.40665625" y1="6.829503125" x2="61.61774375" y2="6.829503125" width="0.1524" layer="1"/>
 <wire x1="60.333325" y1="8.113921875" x2="61.61774375" y2="6.829503125" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="6"/>
+<contactref element="XC9572XL" pad="6"/>
 <wire x1="26.6011875" y1="13.534059375" x2="28.523840625" y2="11.61140625" width="0.1524" layer="1"/>
 <wire x1="58.1747" y1="11.61140625" x2="60.333325" y2="9.45278125" width="0.1524" layer="1"/>
 <wire x1="60.333325" y1="9.45278125" x2="60.333325" y2="8.113921875" width="0.1524" layer="1"/>
@@ -3515,7 +3548,7 @@ design rules under a new name.</description>
 <wire x1="64.1751125" y1="30.48019375" x2="64.1751125" y2="11.21229375" width="0.1524" layer="16"/>
 <wire x1="64.1751125" y1="11.21229375" x2="65.08311875" y2="10.3042875" width="0.1524" layer="16"/>
 <wire x1="64.1751125" y1="3.791046875" x2="64.1751125" y2="6.81234375" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="7"/>
+<contactref element="XC9572XL" pad="7"/>
 <wire x1="26.954740625" y1="13.8876125" x2="28.900746875" y2="11.94160625" width="0.1524" layer="1"/>
 <wire x1="28.900746875" y1="11.94160625" x2="60.32806875" y2="11.94160625" width="0.1524" layer="1"/>
 <wire x1="62.95986875" y1="9.30980625" x2="60.32806875" y2="11.94160625" width="0.1524" layer="1"/>
@@ -3598,7 +3631,7 @@ design rules under a new name.</description>
 <wire x1="61.27311875" y1="5.88399375" x2="61.27311875" y2="6.70715" width="0.1524" layer="1"/>
 <wire x1="62.9051125" y1="4.252" x2="61.27311875" y2="5.88399375" width="0.1524" layer="1"/>
 <wire x1="60.00311875" y1="7.97715" x2="61.27311875" y2="6.70715" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="5"/>
+<contactref element="XC9572XL" pad="5"/>
 <wire x1="28.08238125" y1="11.281196875" x2="58.037925" y2="11.281196875" width="0.1524" layer="1"/>
 <wire x1="26.247634375" y1="13.11594375" x2="26.247634375" y2="13.18050625" width="0.1524" layer="1"/>
 <wire x1="28.08238125" y1="11.281196875" x2="26.247634375" y2="13.11594375" width="0.1524" layer="1"/>
@@ -3747,7 +3780,7 @@ design rules under a new name.</description>
 <wire x1="18.9679625" y1="5.02925625" x2="18.423325" y2="5.57389375" width="0.1524" layer="1"/>
 <wire x1="18.423325" y1="5.57389375" x2="18.423325" y2="6.84391875" width="0.1524" layer="1"/>
 <wire x1="28.6610125" y1="5.02925625" x2="18.9679625" y2="5.02925625" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="59"/>
+<contactref element="XC9572XL" pad="59"/>
 <wire x1="20.590778125" y1="13.534059375" x2="17.15331875" y2="10.0966" width="0.1524" layer="1"/>
 <wire x1="17.15331875" y1="10.0966" x2="17.15331875" y2="7.9994875" width="0.1524" layer="1"/>
 </signal>
@@ -3764,7 +3797,7 @@ design rules under a new name.</description>
 <wire x1="28.646909375" y1="7.56925" x2="21.466209375" y2="7.56925" width="0.1524" layer="1"/>
 <wire x1="19.69331875" y1="8.42175" x2="20.54581875" y2="7.56925" width="0.1524" layer="1"/>
 <wire x1="21.466209375" y1="7.56925" x2="20.54581875" y2="7.56925" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="62"/>
+<contactref element="XC9572XL" pad="62"/>
 <wire x1="21.651440625" y1="12.4734" x2="19.69331875" y2="10.515278125" width="0.1524" layer="1"/>
 <wire x1="19.69331875" y1="10.515278125" x2="19.69331875" y2="8.42175" width="0.1524" layer="1"/>
 </signal>
@@ -3792,7 +3825,7 @@ design rules under a new name.</description>
 <wire x1="32.563934375" y1="14.64238125" x2="33.574240625" y2="14.64238125" width="0.1524" layer="1"/>
 <wire x1="33.574240625" y1="14.64238125" x2="60.834509375" y2="14.64238125" width="0.1524" layer="1"/>
 <wire x1="60.834509375" y1="14.64238125" x2="67.994284375" y2="21.80215625" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="15"/>
+<contactref element="XC9572XL" pad="15"/>
 <wire x1="29.783165625" y1="16.716040625" x2="31.856825" y2="14.64238125" width="0.1524" layer="1"/>
 <wire x1="31.856825" y1="14.64238125" x2="32.563934375" y2="14.64238125" width="0.1524" layer="1"/>
 </signal>
@@ -3849,7 +3882,7 @@ design rules under a new name.</description>
 <wire x1="32.72351875" y1="10.32863125" x2="32.4251125" y2="10.6270375" width="0.1524" layer="16"/>
 <wire x1="32.4251125" y1="10.6270375" x2="32.4251125" y2="27.94019375" width="0.1524" layer="16"/>
 <wire x1="19.36311875" y1="8.284975" x2="20.40904375" y2="7.23905" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="61"/>
+<contactref element="XC9572XL" pad="61"/>
 <wire x1="27.179121875" y1="7.23905" x2="20.40904375" y2="7.23905" width="0.1524" layer="1"/>
 <wire x1="21.297884375" y1="12.826953125" x2="19.36311875" y2="10.8921875" width="0.1524" layer="1"/>
 <wire x1="19.36311875" y1="10.8921875" x2="19.36311875" y2="8.284975" width="0.1524" layer="1"/>
@@ -3875,7 +3908,7 @@ design rules under a new name.</description>
 <wire x1="31.4853125" y1="29.0118125" x2="31.4853125" y2="10.90235625" width="0.1524" layer="16"/>
 <wire x1="20.68259375" y1="7.89945" x2="28.9134375" y2="7.89945" width="0.1524" layer="1"/>
 <wire x1="20.02351875" y1="8.558525" x2="20.68259375" y2="7.89945" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="63"/>
+<contactref element="XC9572XL" pad="63"/>
 <wire x1="22.00499375" y1="12.119846875" x2="20.02351875" y2="10.138371875" width="0.1524" layer="1"/>
 <wire x1="20.02351875" y1="10.138371875" x2="20.02351875" y2="8.558525" width="0.1524" layer="1"/>
 <wire x1="28.9134375" y1="7.89945" x2="29.5738375" y2="7.23905" width="0.1524" layer="1"/>
@@ -3898,7 +3931,7 @@ design rules under a new name.</description>
 <wire x1="18.75353125" y1="5.7106625" x2="18.75353125" y2="6.9806875" width="0.1524" layer="1"/>
 <wire x1="31.1551125" y1="3.791046875" x2="30.418775" y2="3.791046875" width="0.1524" layer="1"/>
 <wire x1="30.418775" y1="3.791046875" x2="28.850365625" y2="5.35945625" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="60"/>
+<contactref element="XC9572XL" pad="60"/>
 <wire x1="20.94433125" y1="13.18050625" x2="17.48351875" y2="9.71969375" width="0.1524" layer="1"/>
 <wire x1="17.48351875" y1="9.71969375" x2="17.48351875" y2="8.1362625" width="0.1524" layer="1"/>
 </signal>
@@ -3915,7 +3948,7 @@ design rules under a new name.</description>
 <wire x1="30.21531875" y1="26.98629375" x2="30.21531875" y2="9.95589375" width="0.1524" layer="16"/>
 <wire x1="31.157746875" y1="9.013465625" x2="31.157746875" y2="8.87368125" width="0.1524" layer="16"/>
 <wire x1="30.21531875" y1="9.95589375" x2="31.157746875" y2="9.013465625" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="1"/>
+<contactref element="XC9572XL" pad="1"/>
 <wire x1="24.83341875" y1="11.766290625" x2="26.490459375" y2="10.10925" width="0.1524" layer="1"/>
 <wire x1="29.899221875" y1="8.871046875" x2="31.1551125" y2="8.871046875" width="0.1524" layer="1"/>
 <wire x1="26.490459375" y1="10.10925" x2="28.66101875" y2="10.10925" width="0.1524" layer="1"/>
@@ -3947,7 +3980,7 @@ design rules under a new name.</description>
 <wire x1="10.8351125" y1="31.7643" x2="10.8351125" y2="35.56019375" width="0.1524" layer="16"/>
 <wire x1="10.8351125" y1="29.1960875" x2="9.9271125" y2="30.1040875" width="0.1524" layer="16"/>
 <wire x1="9.9271125" y1="30.8563" x2="10.8351125" y2="31.7643" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="51"/>
+<contactref element="XC9572XL" pad="51"/>
 <wire x1="10.8351125" y1="9.435246875" x2="10.8351125" y2="8.871046875" width="0.1524" layer="1"/>
 <wire x1="17.762353125" y1="16.3624875" x2="10.8351125" y2="9.435246875" width="0.1524" layer="1"/>
 </signal>
@@ -3961,7 +3994,7 @@ design rules under a new name.</description>
 <wire x1="10.8351125" y1="29.663071875" x2="11.16531875" y2="29.332865625" width="0.1524" layer="16"/>
 <wire x1="11.74311875" y1="10.113403125" x2="11.16531875" y2="10.691203125" width="0.1524" layer="16"/>
 <wire x1="11.74311875" y1="8.4949375" x2="11.74311875" y2="10.113403125" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="52"/>
+<contactref element="XC9572XL" pad="52"/>
 <wire x1="11.74311875" y1="9.63614375" x2="11.74311875" y2="8.35945" width="0.1524" layer="1"/>
 <wire x1="11.74311875" y1="9.63614375" x2="18.11590625" y2="16.00893125" width="0.1524" layer="1"/>
 <wire x1="11.74311875" y1="8.35945" x2="10.8351125" y2="7.45144375" width="0.1524" layer="1"/>
@@ -3979,7 +4012,7 @@ design rules under a new name.</description>
 <wire x1="10.4731125" y1="28.987796875" x2="10.4731125" y2="27.5640875" width="0.1524" layer="16"/>
 <wire x1="9.5651125" y1="6.331046875" x2="9.5651125" y2="7.14818125" width="0.1524" layer="1"/>
 <wire x1="9.5940375" y1="7.17710625" x2="9.5651125" y2="7.14818125" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="50"/>
+<contactref element="XC9572XL" pad="50"/>
 <wire x1="17.4088" y1="16.716040625" x2="10.471809375" y2="9.77905" width="0.1524" layer="1"/>
 <wire x1="10.471809375" y1="9.77905" x2="10.45900625" y2="9.77905" width="0.1524" layer="1"/>
 <wire x1="10.45900625" y1="9.77905" x2="9.5940375" y2="8.91408125" width="0.1524" layer="1"/>
@@ -3997,7 +4030,7 @@ design rules under a new name.</description>
 <wire x1="9.5651125" y1="1.251046875" x2="9.5651125" y2="5.04693125" width="0.1524" layer="1"/>
 <wire x1="9.5651125" y1="5.04693125" x2="8.65710625" y2="5.9549375" width="0.1524" layer="1"/>
 <wire x1="9.2638375" y1="7.31388125" x2="8.65710625" y2="6.70715" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="49"/>
+<contactref element="XC9572XL" pad="49"/>
 <wire x1="17.05524375" y1="17.06959375" x2="9.2638375" y2="9.2781875" width="0.1524" layer="1"/>
 <wire x1="9.2638375" y1="9.2781875" x2="9.2638375" y2="7.31388125" width="0.1524" layer="1"/>
 </signal>
@@ -4185,7 +4218,7 @@ design rules under a new name.</description>
 <wire x1="27.694128125" y1="28.875284375" x2="28.2531125" y2="28.3163" width="0.1524" layer="16"/>
 <wire x1="28.2531125" y1="9.233046875" x2="28.6151125" y2="8.871046875" width="0.1524" layer="16"/>
 <wire x1="28.2531125" y1="28.3163" x2="28.2531125" y2="9.233046875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="64"/>
+<contactref element="XC9572XL" pad="64"/>
 <wire x1="22.358546875" y1="11.766290625" x2="24.3457875" y2="9.77905" width="0.1524" layer="1"/>
 <wire x1="27.359221875" y1="8.871046875" x2="28.6151125" y2="8.871046875" width="0.1524" layer="1"/>
 <wire x1="24.3457875" y1="9.77905" x2="26.45121875" y2="9.77905" width="0.1524" layer="1"/>
@@ -4199,7 +4232,7 @@ design rules under a new name.</description>
 <wire x1="28.6151125" y1="7.58693125" x2="28.6151125" y2="3.791046875" width="0.1524" layer="16"/>
 <wire x1="28.6151125" y1="10.15515625" x2="29.52311875" y2="9.24715" width="0.1524" layer="16"/>
 <wire x1="29.52311875" y1="8.4949375" x2="28.6151125" y2="7.58693125" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="58"/>
+<contactref element="XC9572XL" pad="58"/>
 <wire x1="17.44678125" y1="7.23905" x2="16.82311875" y2="7.8627125" width="0.1524" layer="1"/>
 <wire x1="16.82311875" y1="7.8627125" x2="16.82311875" y2="10.47350625" width="0.1524" layer="1"/>
 <wire x1="16.82311875" y1="10.47350625" x2="20.237225" y2="13.8876125" width="0.1524" layer="1"/>
@@ -4234,7 +4267,7 @@ design rules under a new name.</description>
 <wire x1="14.86289375" y1="10.013575" x2="14.86289375" y2="9.261453125" width="0.1524" layer="16"/>
 <wire x1="14.86289375" y1="9.261453125" x2="14.86289375" y2="7.883234375" width="0.1524" layer="16"/>
 <wire x1="14.86289375" y1="7.883234375" x2="15.9151125" y2="6.831015625" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="46"/>
+<contactref element="XC9572XL" pad="46"/>
 <wire x1="17.762353125" y1="20.251571875" x2="15.9151125" y2="22.0988125" width="0.1524" layer="1"/>
 <wire x1="15.9151125" y1="22.0988125" x2="15.9151125" y2="30.48019375" width="0.1524" layer="1"/>
 </signal>
@@ -4246,7 +4279,7 @@ design rules under a new name.</description>
 <wire x1="15.9151125" y1="29.1960875" x2="15.9151125" y2="8.871046875" width="0.1524" layer="16"/>
 <wire x1="15.9151125" y1="31.7643" x2="16.8231125" y2="30.8563" width="0.1524" layer="16"/>
 <wire x1="16.8231125" y1="30.1040875" x2="15.9151125" y2="29.1960875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="45"/>
+<contactref element="XC9572XL" pad="45"/>
 <wire x1="18.11590625" y1="20.605128125" x2="16.2453125" y2="22.475721875" width="0.1524" layer="1"/>
 <wire x1="16.8231125" y1="30.1040875" x2="16.8231125" y2="30.8563" width="0.1524" layer="1"/>
 <wire x1="16.2453125" y1="22.475721875" x2="16.2453125" y2="29.5262875" width="0.1524" layer="1"/>
@@ -4261,7 +4294,7 @@ design rules under a new name.</description>
 <wire x1="14.5326875" y1="7.953584375" x2="14.480965625" y2="7.9018625" width="0.1524" layer="16"/>
 <wire x1="14.480965625" y1="7.9018625" x2="13.3751125" y2="6.796009375" width="0.1524" layer="16"/>
 <wire x1="14.5326875" y1="7.953584375" x2="14.5326875" y2="9.367371875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="48"/>
+<contactref element="XC9572XL" pad="48"/>
 <wire x1="17.05524375" y1="19.544465625" x2="13.3751125" y2="23.224596875" width="0.1524" layer="1"/>
 <wire x1="13.3751125" y1="23.224596875" x2="13.3751125" y2="30.48019375" width="0.1524" layer="1"/>
 <wire x1="14.5326875" y1="9.367371875" x2="13.67351875" y2="10.226540625" width="0.1524" layer="16"/>
@@ -4277,7 +4310,7 @@ design rules under a new name.</description>
 <wire x1="12.4353125" y1="31.249271875" x2="12.4353125" y2="29.67095" width="0.1524" layer="16"/>
 <wire x1="12.4353125" y1="29.67095" x2="13.3433125" y2="28.76295" width="0.1524" layer="16"/>
 <wire x1="13.3433125" y1="28.76295" x2="13.3433125" y2="8.902846875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="47"/>
+<contactref element="XC9572XL" pad="47"/>
 <wire x1="17.4088" y1="19.89801875" x2="13.70531875" y2="23.6015" width="0.1524" layer="1"/>
 <wire x1="14.2831125" y1="30.1040875" x2="14.2831125" y2="30.8563" width="0.1524" layer="1"/>
 <wire x1="13.70531875" y1="23.6015" x2="13.70531875" y2="29.52629375" width="0.1524" layer="1"/>
@@ -4293,7 +4326,7 @@ design rules under a new name.</description>
 <wire x1="19.36311875" y1="9.93136875" x2="18.4551125" y2="10.839375" width="0.1524" layer="16"/>
 <wire x1="18.4551125" y1="10.839375" x2="18.4551125" y2="30.48019375" width="0.1524" layer="16"/>
 <wire x1="19.36311875" y1="8.4949375" x2="19.36311875" y2="9.93136875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="42"/>
+<contactref element="XC9572XL" pad="42"/>
 <wire x1="18.4551125" y1="30.48019375" x2="18.4551125" y2="27.14896875" width="0.1524" layer="1"/>
 <wire x1="18.4551125" y1="27.14896875" x2="17.987559375" y2="26.681415625" width="0.1524" layer="1"/>
 <wire x1="17.987559375" y1="26.681415625" x2="17.987559375" y2="22.85479375" width="0.1524" layer="1"/>
@@ -4310,7 +4343,7 @@ design rules under a new name.</description>
 <wire x1="17.51828125" y1="26.98925625" x2="17.51828125" y2="9.807878125" width="0.1524" layer="16"/>
 <wire x1="17.51828125" y1="28.89113125" x2="18.0931125" y2="28.3163" width="0.1524" layer="16"/>
 <wire x1="18.0931125" y1="27.5640875" x2="17.51828125" y2="26.98925625" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="40"/>
+<contactref element="XC9572XL" pad="40"/>
 <wire x1="18.78531875" y1="35.2299875" x2="18.4551125" y2="35.56019375" width="0.1524" layer="1"/>
 <wire x1="18.78531875" y1="31.874765625" x2="18.78531875" y2="35.2299875" width="0.1524" layer="1"/>
 <wire x1="18.78531875" y1="27.0122" x2="18.42075" y2="26.64763125" width="0.1524" layer="1"/>
@@ -4329,7 +4362,7 @@ design rules under a new name.</description>
 <wire x1="17.1851125" y1="5.04693125" x2="17.1851125" y2="1.251046875" width="0.1524" layer="16"/>
 <wire x1="17.1851125" y1="7.61515625" x2="18.09311875" y2="6.70715" width="0.1524" layer="16"/>
 <wire x1="18.09311875" y1="5.9549375" x2="17.1851125" y2="5.04693125" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="44"/>
+<contactref element="XC9572XL" pad="44"/>
 <wire x1="18.469459375" y1="20.95868125" x2="17.1851125" y2="22.243028125" width="0.1524" layer="1"/>
 <wire x1="17.1851125" y1="22.243028125" x2="17.1851125" y2="27.94019375" width="0.1524" layer="1"/>
 </signal>
@@ -4344,7 +4377,7 @@ design rules under a new name.</description>
 <wire x1="17.1851125" y1="29.9991125" x2="16.2771125" y2="29.0911125" width="0.1524" layer="16"/>
 <wire x1="16.82311875" y1="10.126271875" x2="16.2771125" y2="10.672278125" width="0.1524" layer="16"/>
 <wire x1="16.82311875" y1="8.4949375" x2="16.82311875" y2="10.126271875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="43"/>
+<contactref element="XC9572XL" pad="43"/>
 <wire x1="17.40430625" y1="29.00510625" x2="18.0931125" y2="28.3163" width="0.1524" layer="1"/>
 <wire x1="17.65735625" y1="26.8181875" x2="18.0931125" y2="27.25394375" width="0.1524" layer="1"/>
 <wire x1="18.0931125" y1="28.3163" x2="18.0931125" y2="27.25394375" width="0.1524" layer="1"/>
@@ -4365,7 +4398,7 @@ design rules under a new name.</description>
 <wire x1="12.1051125" y1="1.251046875" x2="12.1051125" y2="5.04693125" width="0.1524" layer="1"/>
 <wire x1="12.1051125" y1="5.04693125" x2="11.19710625" y2="5.9549375" width="0.1524" layer="1"/>
 <wire x1="11.8695125" y1="7.37955625" x2="11.19710625" y2="6.70715" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="56"/>
+<contactref element="XC9572XL" pad="56"/>
 <wire x1="14.483015625" y1="9.547615625" x2="14.483015625" y2="8.5806375" width="0.1524" layer="1"/>
 <wire x1="14.483015625" y1="8.5806375" x2="13.281934375" y2="7.37955625" width="0.1524" layer="1"/>
 <wire x1="13.281934375" y1="7.37955625" x2="11.8695125" y2="7.37955625" width="0.1524" layer="1"/>
@@ -4383,7 +4416,7 @@ design rules under a new name.</description>
 <wire x1="13.01310625" y1="28.62618125" x2="13.01310625" y2="28.31630625" width="0.1524" layer="16"/>
 <wire x1="13.01310625" y1="28.31630625" x2="13.0131125" y2="28.3163" width="0.1524" layer="16"/>
 <wire x1="12.1051125" y1="33.02019375" x2="12.1051125" y2="29.534175" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="57"/>
+<contactref element="XC9572XL" pad="57"/>
 <wire x1="12.1051125" y1="6.331046875" x2="12.920559375" y2="6.331046875" width="0.1524" layer="1"/>
 <wire x1="14.910615625" y1="9.268109375" x2="19.883671875" y2="14.241165625" width="0.1524" layer="1"/>
 <wire x1="12.920559375" y1="6.331046875" x2="14.910615625" y2="8.321103125" width="0.1524" layer="1"/>
@@ -4399,7 +4432,7 @@ design rules under a new name.</description>
 <wire x1="60.3651125" y1="5.04693125" x2="60.3651125" y2="1.251046875" width="0.1524" layer="16"/>
 <wire x1="60.69531875" y1="7.28495" x2="61.27311875" y2="6.70715" width="0.1524" layer="16"/>
 <wire x1="61.27311875" y1="5.9549375" x2="60.3651125" y2="5.04693125" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="2"/>
+<contactref element="XC9572XL" pad="2"/>
 <wire x1="26.8673625" y1="10.43945625" x2="25.186971875" y2="12.119846875" width="0.1524" layer="1"/>
 <wire x1="60.238775" y1="1.377384375" x2="60.3651125" y2="1.251046875" width="0.1524" layer="1"/>
 <wire x1="60.238775" y1="1.377384375" x2="60.238775" y2="5.17326875" width="0.1524" layer="1"/>
@@ -4410,7 +4443,7 @@ design rules under a new name.</description>
 <contactref element="CN1" pad="P$37"/>
 <contactref element="CN2" pad="P$37"/>
 <wire x1="26.0751125" y1="6.749475" x2="26.0751125" y2="3.791046875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="25"/>
+<contactref element="XC9572XL" pad="25"/>
 <wire x1="28.12505" y1="23.18965" x2="27.30829375" y2="22.37289375" width="0.1524" layer="1"/>
 <via x="26.94446875" y="26.425703125" extent="1-16" drill="0.35"/>
 <wire x1="26.94446875" y1="26.780034375" x2="26.94446875" y2="26.531859375" width="0.1524" layer="16"/>
@@ -4437,7 +4470,7 @@ design rules under a new name.</description>
 <wire x1="26.0751125" y1="32.07948125" x2="25.1353125" y2="31.13968125" width="0.1524" layer="16"/>
 <wire x1="25.1353125" y1="31.13968125" x2="25.1353125" y2="29.73171875" width="0.1524" layer="16"/>
 <wire x1="25.1353125" y1="29.73171875" x2="25.769434375" y2="29.097596875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="27"/>
+<contactref element="XC9572XL" pad="27"/>
 <wire x1="27.4146125" y1="23.893425" x2="26.6011875" y2="23.08" width="0.1524" layer="1"/>
 <wire x1="27.4146125" y1="25.0614875" x2="26.3122625" y2="26.1638375" width="0.1524" layer="1"/>
 <wire x1="27.4146125" y1="25.0614875" x2="27.4146125" y2="23.893425" width="0.1524" layer="1"/>
@@ -4465,7 +4498,7 @@ design rules under a new name.</description>
 <wire x1="25.103525" y1="7.31674375" x2="25.71311875" y2="6.70715" width="0.1524" layer="16"/>
 <wire x1="25.71311875" y1="5.9549375" x2="24.8051125" y2="5.04693125" width="0.1524" layer="16"/>
 <wire x1="25.103525" y1="7.31674375" x2="25.103525" y2="10.07693125" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="32"/>
+<contactref element="XC9572XL" pad="32"/>
 <wire x1="24.83341875" y1="24.84776875" x2="24.8051125" y2="24.876075" width="0.1524" layer="1"/>
 <wire x1="24.8051125" y1="24.876075" x2="24.8051125" y2="27.94019375" width="0.1524" layer="1"/>
 <wire x1="24.20135" y1="27.33643125" x2="24.8051125" y2="27.94019375" width="0.1524" layer="16"/>
@@ -4487,7 +4520,7 @@ design rules under a new name.</description>
 <wire x1="24.760584375" y1="9.396659375" x2="24.760584375" y2="9.952896875" width="0.1524" layer="16"/>
 <wire x1="24.760584375" y1="9.952896875" x2="23.87115" y2="10.84233125" width="0.1524" layer="16"/>
 <wire x1="23.87115" y1="10.84233125" x2="23.87115" y2="23.407390625" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="31"/>
+<contactref element="XC9572XL" pad="31"/>
 <wire x1="23.87115" y1="23.407390625" x2="23.87115" y2="28.45944375" width="0.1524" layer="16"/>
 <wire x1="25.186971875" y1="24.4942125" x2="24.16731875" y2="23.474559375" width="0.1524" layer="1"/>
 <wire x1="24.16731875" y1="23.474559375" x2="24.16731875" y2="23.428290625" width="0.1524" layer="1"/>
@@ -4508,7 +4541,7 @@ design rules under a new name.</description>
 <wire x1="23.5400375" y1="10.706471875" x2="24.43038125" y2="9.816128125" width="0.1524" layer="16"/>
 <wire x1="24.43038125" y1="9.816128125" x2="24.43038125" y2="9.2598875" width="0.1524" layer="16"/>
 <wire x1="24.43038125" y1="9.2598875" x2="24.4431125" y2="9.24715625" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="34"/>
+<contactref element="XC9572XL" pad="34"/>
 <wire x1="24.4431125" y1="9.24715625" x2="24.4431125" y2="8.49493125" width="0.1524" layer="16"/>
 <wire x1="23.5033125" y1="30.44839375" x2="23.5351125" y2="30.48019375" width="0.1524" layer="1"/>
 <wire x1="23.5033125" y1="30.44839375" x2="23.5033125" y2="27.4273125" width="0.1524" layer="1"/>
@@ -4538,7 +4571,7 @@ design rules under a new name.</description>
 <wire x1="22.2651125" y1="5.04693125" x2="22.2651125" y2="1.251046875" width="0.1524" layer="16"/>
 <wire x1="22.2651125" y1="7.61515625" x2="23.17311875" y2="6.70715" width="0.1524" layer="16"/>
 <wire x1="23.17311875" y1="5.9549375" x2="22.2651125" y2="5.04693125" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="36"/>
+<contactref element="XC9572XL" pad="36"/>
 <wire x1="21.297884375" y1="23.78710625" x2="21.297884375" y2="23.922878125" width="0.1524" layer="1"/>
 <wire x1="21.297884375" y1="23.922878125" x2="20.761046875" y2="24.459715625" width="0.1524" layer="1"/>
 <wire x1="20.761046875" y1="24.459715625" x2="20.761046875" y2="26.436128125" width="0.1524" layer="1"/>
@@ -4556,7 +4589,7 @@ design rules under a new name.</description>
 <wire x1="22.2651125" y1="6.331046875" x2="21.90311875" y2="6.693040625" width="0.1524" layer="16"/>
 <wire x1="21.90311875" y1="10.15133125" x2="21.300671875" y2="10.753778125" width="0.1524" layer="16"/>
 <wire x1="21.90311875" y1="6.693040625" x2="21.90311875" y2="10.15133125" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="35"/>
+<contactref element="XC9572XL" pad="35"/>
 <wire x1="23.1731125" y1="27.5640875" x2="23.1731125" y2="28.3163" width="0.1524" layer="1"/>
 <wire x1="22.2651125" y1="33.02019375" x2="22.2651125" y2="29.2243" width="0.1524" layer="1"/>
 <wire x1="22.2651125" y1="29.2243" x2="23.1731125" y2="28.3163" width="0.1524" layer="1"/>
@@ -4574,7 +4607,7 @@ design rules under a new name.</description>
 <wire x1="20.63311875" y1="5.9549375" x2="19.7251125" y2="5.04693125" width="0.1524" layer="16"/>
 <wire x1="20.63311875" y1="6.70715" x2="20.02351875" y2="7.31675" width="0.1524" layer="16"/>
 <wire x1="20.02351875" y1="7.31675" x2="20.02351875" y2="10.27806875" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="39"/>
+<contactref element="XC9572XL" pad="39"/>
 <wire x1="19.1473125" y1="27.36239375" x2="19.7251125" y2="27.94019375" width="0.1524" layer="16"/>
 <wire x1="20.02351875" y1="10.27806875" x2="19.1473125" y2="11.154275" width="0.1524" layer="16"/>
 <wire x1="19.1473125" y1="11.154275" x2="19.1473125" y2="27.36239375" width="0.1524" layer="16"/>
@@ -4594,7 +4627,7 @@ design rules under a new name.</description>
 <wire x1="19.7251125" y1="29.656915625" x2="18.8171125" y2="28.748915625" width="0.1524" layer="16"/>
 <wire x1="19.69331875" y1="10.06814375" x2="18.8171125" y2="10.94435" width="0.1524" layer="16"/>
 <wire x1="19.69331875" y1="8.3581625" x2="19.69331875" y2="10.06814375" width="0.1524" layer="16"/>
-<contactref element="XC9572XL(BUS)" pad="38"/>
+<contactref element="XC9572XL" pad="38"/>
 <wire x1="20.6331125" y1="27.5640875" x2="20.6331125" y2="28.3163" width="0.1524" layer="1"/>
 <wire x1="20.6331125" y1="28.3163" x2="19.893203125" y2="29.056209375" width="0.1524" layer="1"/>
 <wire x1="20.590778125" y1="23.08" x2="19.39050625" y2="24.280271875" width="0.1524" layer="1"/>
@@ -4613,7 +4646,7 @@ design rules under a new name.</description>
 <wire x1="65.8071125" y1="31.5266" x2="65.8071125" y2="29.322346875" width="0.1524" layer="16"/>
 <wire x1="66.7151125" y1="8.871046875" x2="62.931175" y2="12.654984375" width="0.1524" layer="1"/>
 <wire x1="62.931175" y1="12.654984375" x2="31.641778125" y2="12.654984375" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="9"/>
+<contactref element="XC9572XL" pad="9"/>
 <wire x1="31.641778125" y1="12.654984375" x2="31.330121875" y2="12.654984375" width="0.1524" layer="1"/>
 <wire x1="27.661846875" y1="14.59471875" x2="29.60158125" y2="12.654984375" width="0.1524" layer="1"/>
 <wire x1="29.60158125" y1="12.654984375" x2="31.330121875" y2="12.654984375" width="0.1524" layer="1"/>
@@ -4630,7 +4663,7 @@ design rules under a new name.</description>
 <wire x1="67.62311875" y1="8.4949375" x2="66.7151125" y2="7.58693125" width="0.1524" layer="16"/>
 <wire x1="66.7151125" y1="3.791046875" x2="66.7151125" y2="6.69881875" width="0.1524" layer="1"/>
 <wire x1="66.7151125" y1="6.69881875" x2="65.547103125" y2="7.866828125" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="8"/>
+<contactref element="XC9572XL" pad="8"/>
 <wire x1="27.30829375" y1="14.241165625" x2="29.277646875" y2="12.2718125" width="0.1524" layer="1"/>
 <wire x1="65.547103125" y1="9.572078125" x2="65.547103125" y2="7.866828125" width="0.1524" layer="1"/>
 <wire x1="29.277646875" y1="12.2718125" x2="62.84736875" y2="12.2718125" width="0.1524" layer="1"/>
@@ -5007,7 +5040,7 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="3"/>
 <contactref element="SJ1" pad="3"/>
 <wire x1="22.085696875" y1="54.912875" x2="22.132809375" y2="54.9599875" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="26"/>
+<contactref element="XC9572XL" pad="26"/>
 <wire x1="33.27808125" y1="40.7318625" x2="33.27808125" y2="39.183978125" width="0.1524" layer="1"/>
 <wire x1="33.27808125" y1="39.183978125" x2="33.011171875" y2="38.663484375" width="0.1524" layer="1"/>
 <via x="33.011171875" y="38.663484375" extent="1-16" drill="0.35"/>
@@ -5040,9 +5073,9 @@ design rules under a new name.</description>
 <wire x1="25.111365625" y1="53.0018625" x2="25.09584375" y2="52.986340625" width="0.254" layer="16"/>
 <via x="28.2218125" y="54.86575625" extent="1-16" drill="0.35"/>
 <via x="25.111365625" y="54.875184375" extent="1-16" drill="0.35"/>
-<contactref element="XC9572XL(BUS)" pad="3"/>
-<contactref element="XC9572XL(BUS)" pad="37"/>
-<contactref element="XC9572XL(BUS)" pad="55"/>
+<contactref element="XC9572XL" pad="3"/>
+<contactref element="XC9572XL" pad="37"/>
+<contactref element="XC9572XL" pad="55"/>
 <wire x1="26.954740625" y1="22.726446875" x2="25.98406875" y2="21.755775" width="0.1524" layer="1"/>
 <wire x1="25.98406875" y1="21.755775" x2="25.98406875" y2="21.411134375" width="0.1524" layer="1"/>
 <via x="25.98406875" y="21.411134375" extent="1-16" drill="0.35"/>
@@ -5112,7 +5145,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="TCK">
 <contactref element="JTAG" pad="4"/>
-<contactref element="XC9572XL(BUS)" pad="30"/>
+<contactref element="XC9572XL" pad="30"/>
 <wire x1="0.40549375" y1="34.6075" x2="2.545878125" y2="36.747884375" width="0.1524" layer="1"/>
 <wire x1="0.40549375" y1="17.855328125" x2="1.497696875" y2="16.763125" width="0.1524" layer="1"/>
 <wire x1="0.40549375" y1="34.6075" x2="0.40549375" y2="17.855328125" width="0.1524" layer="1"/>
@@ -5131,14 +5164,14 @@ design rules under a new name.</description>
 </signal>
 <signal name="TMS">
 <contactref element="JTAG" pad="1"/>
-<contactref element="XC9572XL(BUS)" pad="29"/>
+<contactref element="XC9572XL" pad="29"/>
 <wire x1="25.89408125" y1="23.78710625" x2="20.72738125" y2="18.62040625" width="0.1524" layer="1"/>
 <wire x1="7.260415625" y1="18.62040625" x2="1.497696875" y2="24.383125" width="0.1524" layer="1"/>
 <wire x1="20.72738125" y1="18.62040625" x2="7.260415625" y2="18.62040625" width="0.1524" layer="1"/>
 </signal>
 <signal name="TDO">
 <contactref element="JTAG" pad="3"/>
-<contactref element="XC9572XL(BUS)" pad="53"/>
+<contactref element="XC9572XL" pad="53"/>
 <wire x1="19.402590625" y1="16.80316875" x2="19.402590625" y2="16.588509375" width="0.1524" layer="1"/>
 <wire x1="19.402590625" y1="16.588509375" x2="18.469459375" y2="15.655378125" width="0.1524" layer="1"/>
 <wire x1="19.402590625" y1="16.80316875" x2="18.24576875" y2="17.959990625" width="0.1524" layer="1"/>
@@ -5147,7 +5180,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="TDI">
 <contactref element="JTAG" pad="2"/>
-<contactref element="XC9572XL(BUS)" pad="28"/>
+<contactref element="XC9572XL" pad="28"/>
 <wire x1="26.247634375" y1="23.433553125" x2="21.10428125" y2="18.2902" width="0.1524" layer="1"/>
 <wire x1="5.050621875" y1="18.2902" x2="1.497696875" y2="21.843125" width="0.1524" layer="1"/>
 <wire x1="21.10428125" y1="18.2902" x2="5.050621875" y2="18.2902" width="0.1524" layer="1"/>
@@ -5155,15 +5188,19 @@ design rules under a new name.</description>
 <signal name="PUNT_IN">
 <contactref element="CN2" pad="P$117"/>
 <wire x1="79.4151125" y1="21.68695" x2="79.4151125" y2="30.48019375" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="13"/>
+<contactref element="XC9572XL" pad="13"/>
 <wire x1="29.076059375" y1="16.00893125" x2="30.772815625" y2="14.312175" width="0.1524" layer="1"/>
 <wire x1="30.772815625" y1="14.312175" x2="72.0403375" y2="14.312175" width="0.1524" layer="1"/>
-<wire x1="72.0403375" y1="14.312175" x2="79.4151125" y2="21.68695" width="0.1524" layer="1"/>
+<wire x1="72.0403375" y1="14.312175" x2="78.027321875" y2="20.299159375" width="0.1524" layer="1"/>
+<contactref element="R1" pad="1"/>
+<wire x1="79.09478125" y1="21.36661875" x2="79.4151125" y2="21.68695" width="0.1524" layer="1"/>
+<wire x1="74.05349375" y1="20.299159375" x2="78.027321875" y2="20.299159375" width="0.1524" layer="1"/>
+<wire x1="78.027321875" y1="20.299159375" x2="79.09478125" y2="21.36661875" width="0.1524" layer="1"/>
 </signal>
 <signal name="PUNT_OUT">
 <contactref element="CN1" pad="P$117"/>
 <wire x1="79.4151125" y1="7.13910625" x2="79.4151125" y2="3.791046875" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="10"/>
+<contactref element="XC9572XL" pad="10"/>
 <wire x1="29.931746875" y1="13.031925" x2="28.0154" y2="14.948271875" width="0.1524" layer="1"/>
 <wire x1="29.931746875" y1="13.031925" x2="78.08104375" y2="13.031925" width="0.1524" layer="1"/>
 <wire x1="80.5314375" y1="8.25543125" x2="79.4151125" y2="7.13910625" width="0.1524" layer="1"/>
@@ -5172,7 +5209,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SPI_MOSI">
 <contactref element="U1" pad="57"/>
-<contactref element="XC9572XL(BUS)" pad="18"/>
+<contactref element="XC9572XL" pad="18"/>
 <wire x1="32.0631125" y1="35.796621875" x2="32.0631125" y2="35.9363" width="0.1524" layer="1"/>
 <wire x1="32.0631125" y1="35.796621875" x2="34.006478125" y2="33.85325625" width="0.1524" layer="1"/>
 <wire x1="34.6031125" y1="30.8563" x2="34.6031125" y2="30.1040875" width="0.1524" layer="1"/>
@@ -5186,7 +5223,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SPI_MISO">
 <contactref element="U1" pad="56"/>
-<contactref element="XC9572XL(BUS)" pad="19"/>
+<contactref element="XC9572XL" pad="19"/>
 <wire x1="33.3331125" y1="24.155071875" x2="33.3331125" y2="29.5580875" width="0.1524" layer="1"/>
 <wire x1="33.3331125" y1="32.6440875" x2="33.3331125" y2="33.3963" width="0.1524" layer="1"/>
 <wire x1="30.77900625" y1="34.65219375" x2="30.2471125" y2="35.1840875" width="0.1524" layer="1"/>
@@ -5202,7 +5239,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SPI_CK">
 <contactref element="U1" pad="55"/>
-<contactref element="XC9572XL(BUS)" pad="20"/>
+<contactref element="XC9572XL" pad="20"/>
 <wire x1="28.77808125" y1="40.7318625" x2="28.77808125" y2="38.1477" width="0.1524" layer="1"/>
 <wire x1="28.77808125" y1="38.1477" x2="29.9169125" y2="37.00886875" width="0.1524" layer="1"/>
 <wire x1="29.9169125" y1="37.00886875" x2="29.9169125" y2="35.0473125" width="0.1524" layer="1"/>
@@ -5221,7 +5258,7 @@ design rules under a new name.</description>
 <wire x1="26.27808125" y1="40.7318625" x2="26.27808125" y2="39.611171875" width="0.1524" layer="1"/>
 <wire x1="26.27808125" y1="39.611171875" x2="27.237384375" y2="38.65186875" width="0.1524" layer="1"/>
 <wire x1="27.237384375" y1="38.65186875" x2="27.237384375" y2="35.068596875" width="0.1524" layer="1"/>
-<contactref element="XC9572XL(BUS)" pad="24"/>
+<contactref element="XC9572XL" pad="24"/>
 <wire x1="27.237384375" y1="35.068596875" x2="28.6469125" y2="33.65906875" width="0.1524" layer="1"/>
 <wire x1="28.6469125" y1="33.65906875" x2="28.6469125" y2="32.5073125" width="0.1524" layer="1"/>
 <wire x1="28.6469125" y1="32.5073125" x2="29.5867125" y2="31.5675125" width="0.1524" layer="1"/>
@@ -5230,15 +5267,12 @@ design rules under a new name.</description>
 <wire x1="28.826015625" y1="29.0104375" x2="29.5867125" y2="29.771134375" width="0.1524" layer="1"/>
 <wire x1="28.826015625" y1="23.183509375" x2="28.826015625" y2="29.0104375" width="0.1524" layer="1"/>
 </signal>
-<signal name="-">
-<contactref element="BT1" pad="2"/>
-</signal>
 <signal name="+">
 <contactref element="BT1" pad="1"/>
 </signal>
 <signal name="UART5_RX">
 <contactref element="U1" pad="54"/>
-<contactref element="XC9572XL(BUS)" pad="22"/>
+<contactref element="XC9572XL" pad="22"/>
 <wire x1="28.368953125" y1="21.312234375" x2="31.203975" y2="24.14725625" width="0.1524" layer="1"/>
 <wire x1="31.203975" y1="24.14725625" x2="31.203975" y2="27.41025" width="0.1524" layer="1"/>
 <wire x1="31.203975" y1="27.41025" x2="31.1869125" y2="27.4273125" width="0.1524" layer="1"/>
@@ -5254,7 +5288,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="UART5_TX">
 <contactref element="U1" pad="53"/>
-<contactref element="XC9572XL(BUS)" pad="23"/>
+<contactref element="XC9572XL" pad="23"/>
 <wire x1="28.0154" y1="21.6657875" x2="30.869346875" y2="24.519734375" width="0.1524" layer="1"/>
 <wire x1="30.869346875" y1="24.519734375" x2="30.869346875" y2="27.277903125" width="0.1524" layer="1"/>
 <wire x1="30.869346875" y1="27.277903125" x2="30.8567125" y2="27.2905375" width="0.1524" layer="1"/>

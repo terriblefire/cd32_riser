@@ -14796,8 +14796,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ2W" device="" package3d_urn="urn:adsk.eagle:package:15474/1"/>
 <part name="X1" library="con-berg" library_urn="urn:adsk.eagle:library:130" deviceset="PN87520-S" device="" package3d_urn="urn:adsk.eagle:package:6147/1"/>
 <part name="JTAG" library="microbuilder" deviceset="HEADER-1X6" device="ROUND" value="JTAG"/>
-<part name="XC9572XL(BUS)" library="terriblefire" deviceset="XC9572XL-VQ64" device=""/>
+<part name="XC9572XL" library="terriblefire" deviceset="XC9572XL-VQ64" device=""/>
 <part name="BT1" library="SparkFun-Batteries" deviceset="BATTERY" device="-20MM_PTH"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -17255,7 +17256,7 @@ PA2-&gt; H  "Basic Board"</text>
 <attribute name="NAME" x="78.74" y="105.41" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="78.74" y="83.82" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="BT1" gate="G$1" x="190.5" y="172.72"/>
+<instance part="BT1" gate="G$1" x="210.82" y="172.72" rot="R90"/>
 </instances>
 <busses>
 <bus name="A[0..31],AB,AB_EXT,_ACTIVE,AG,AG_EXT,AGND,AR,AR_EXT,_AS,_AVEC,_BEER,_BLANK,CCK_B,CLK_17MHZ,_CPU_BG,_CPU_BR,CPUCLK_A,_CSYNC,D[0..31],DA_BCLK,DA_DATA,DA_LRCLK,DB,DG,DI,_DKRD,_DKWD,DKWE,DR,_DS,_DSACK_0,_DSACK_1,_EXP_BG,_EXP_BR,_EXT_AUDIO,_EXT_VIDEO,FC[0..2],_FIRE0,_FIRE1,GND,_HLT,_HSYNC,_INT2,_INT6,_IPL[0..2],_KB_CLOCK,_KB_DATA,_LED,LEFT,LEFT_EXT,_MUTE,NC,_NTSC,PIXELCLK,_PIXELSW,_PIXELSW_EXT,_PUNT,_RESET,RIGHT,RIGHT_EXT,_RMC,_RST,R_W,_RXD,SIZ[0..1],_TXD,VCC,VCC33,VCC12V,VGND,_VSYNC,XCLK,_XCLKEN,PUNT_IN,PUNT_OUT,SPI_MOSI,SPI_MISO,SPI_CK,SPI_NSS,UART5_RX,UART5_TX">
@@ -17400,6 +17401,11 @@ PA2-&gt; H  "Basic Board"</text>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="U1" gate="PORTB_L" pin="PB2"/>
 <wire x1="187.96" y1="119.38" x2="177.8" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BT1" gate="G$1" pin="-"/>
+<wire x1="248.92" y1="182.88" x2="210.82" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="182.88" x2="210.82" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC33" class="0">
@@ -17744,7 +17750,8 @@ PA2-&gt; H  "Basic Board"</text>
 <attribute name="NAME" x="53.975" y="39.37" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="33.02" y="39.37" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="XC9572XL(BUS)" gate="XC9572XL-VQ64" x="106.68" y="86.36" rot="R180"/>
+<instance part="XC9572XL" gate="XC9572XL-VQ64" x="106.68" y="86.36" rot="R180"/>
+<instance part="R1" gate="G$1" x="43.18" y="157.48" rot="R90"/>
 </instances>
 <busses>
 <bus name="A[0..31],AB,AB_EXT,_ACTIVE,AG,AG_EXT,AGND,AR,AR_EXT,_AS,_AVEC,_BEER,_BLANK,CCK_B,CLK_17MHZ,_CPU_BG,_CPU_BR,CPUCLK_A,_CSYNC,D[0..31],DA_BCLK,DA_DATA,DA_LRCLK,DB,DG,DI,_DKRD,_DKWD,DKWE,DR,_DS,_DSACK_0,_DSACK_1,_EXP_BG,_EXP_BR,_EXT_AUDIO,_EXT_VIDEO,FC[0..2],_FIRE0,_FIRE1,GND,_HLT,_HSYNC,_INT2,_INT6,_IPL[0..2],_KB_CLOCK,_KB_DATA,_LED,LEFT,LEFT_EXT,_MUTE,NC,_NTSC,PIXELCLK,_PIXELSW,_PIXELSW_EXT,_PUNT,_RESET,RIGHT,RIGHT_EXT,_RMC,_RST,R_W,_RXD,SIZ[0..1],_TXD,VCC,VCC33,VCC12V,VGND,_VSYNC,XCLK,_XCLKEN,PUNT_IN,PUNT_OUT,SPI_MOSI,SPI_MISO,SPI_CK,SPI_NSS,UART5_RX,UART5_TX">
@@ -17765,22 +17772,22 @@ PA2-&gt; H  "Basic Board"</text>
 <label x="22.86" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="GND@3"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="GND@3"/>
 <wire x1="106.68" y1="20.32" x2="106.68" y2="53.34" width="0.1524" layer="91"/>
 <label x="106.68" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="GND@4"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="GND@4"/>
 <wire x1="195.58" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
 <label x="165.1" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="GND@1"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="GND@1"/>
 <wire x1="91.44" y1="180.34" x2="91.44" y2="121.92" width="0.1524" layer="91"/>
 <label x="91.44" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="GND@2"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="GND@2"/>
 <wire x1="12.7" y1="96.52" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
 <label x="33.02" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -17793,22 +17800,22 @@ PA2-&gt; H  "Basic Board"</text>
 <label x="22.86" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="VCCIO@2"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="VCCIO@2"/>
 <wire x1="12.7" y1="83.82" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
 <label x="33.02" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="VCCINT"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="VCCINT"/>
 <wire x1="119.38" y1="180.34" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
 <label x="119.38" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="VCCINT/VPP"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="VCCINT/VPP"/>
 <wire x1="96.52" y1="20.32" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
 <label x="96.52" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="VCCIO@1"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="VCCIO@1"/>
 <wire x1="195.58" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
 <label x="165.1" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -17823,7 +17830,7 @@ PA2-&gt; H  "Basic Board"</text>
 <segment>
 <wire x1="12.7" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <label x="33.02" y="73.66" size="1.778" layer="95"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="TCK"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="TCK"/>
 </segment>
 </net>
 <net name="TMS" class="0">
@@ -17836,7 +17843,7 @@ PA2-&gt; H  "Basic Board"</text>
 <segment>
 <wire x1="12.7" y1="76.2" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
 <label x="33.02" y="76.2" size="1.778" layer="95"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="TMS"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="TMS"/>
 </segment>
 </net>
 <net name="TDO" class="0">
@@ -17849,7 +17856,7 @@ PA2-&gt; H  "Basic Board"</text>
 <segment>
 <wire x1="139.7" y1="78.74" x2="195.58" y2="78.74" width="0.1524" layer="91"/>
 <label x="165.1" y="78.74" size="1.778" layer="95"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="TDO"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="TDO"/>
 </segment>
 </net>
 <net name="TDI" class="0">
@@ -17862,7 +17869,7 @@ PA2-&gt; H  "Basic Board"</text>
 <segment>
 <wire x1="12.7" y1="78.74" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
 <label x="33.02" y="78.74" size="1.778" layer="95"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="TDI"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="TDI"/>
 </segment>
 </net>
 <net name="CPUCLK_A" class="0">
@@ -17871,365 +17878,378 @@ PA2-&gt; H  "Basic Board"</text>
 </segment>
 <segment>
 <wire x1="88.9" y1="180.34" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="GCLK1"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="GCLK1"/>
 <label x="88.9" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A2" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/3"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/3"/>
 <wire x1="12.7" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
 <label x="33.02" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A1" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/8"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/8"/>
 <wire x1="12.7" y1="86.36" x2="71.12" y2="86.36" width="0.1524" layer="91"/>
 <label x="33.02" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/9"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/9"/>
 <wire x1="12.7" y1="81.28" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 <label x="33.02" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A3" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/4"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/4"/>
 <wire x1="12.7" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
 <label x="33.02" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D31" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/3"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/3"/>
 <wire x1="195.58" y1="91.44" x2="139.7" y2="91.44" width="0.1524" layer="91"/>
 <label x="165.1" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D30" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/9"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/9"/>
 <wire x1="195.58" y1="106.68" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
 <label x="165.1" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D29" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/4"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/4"/>
 <wire x1="195.58" y1="93.98" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
 <label x="165.1" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D28" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/6"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/6"/>
 <wire x1="195.58" y1="101.6" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
 <label x="165.1" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D27" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/2"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/2"/>
 <wire x1="195.58" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
 <label x="165.1" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D26" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/10"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/10"/>
 <wire x1="124.46" y1="180.34" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
 <label x="124.46" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D25" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/5"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/5"/>
 <wire x1="195.58" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
 <label x="165.1" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D24" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/8"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/8"/>
 <wire x1="195.58" y1="104.14" x2="139.7" y2="104.14" width="0.1524" layer="91"/>
 <label x="165.1" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A4" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/11"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/11"/>
 <wire x1="86.36" y1="20.32" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 <label x="86.36" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A5" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/6"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/6"/>
 <wire x1="88.9" y1="20.32" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
 <label x="88.9" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A6" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/14"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/14"/>
 <wire x1="91.44" y1="20.32" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
 <label x="91.44" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A7" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/15"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/15"/>
 <wire x1="93.98" y1="20.32" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
 <label x="93.98" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A8" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/17"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/17"/>
 <wire x1="99.06" y1="20.32" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
 <label x="99.06" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A9" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/10"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/10"/>
 <wire x1="101.6" y1="20.32" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 <label x="101.6" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A10" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/12"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/12"/>
 <wire x1="104.14" y1="20.32" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
 <label x="104.14" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A11" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/16"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/16"/>
 <wire x1="109.22" y1="20.32" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 <label x="109.22" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A12" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/2"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/2"/>
 <wire x1="111.76" y1="20.32" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
 <label x="111.76" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A13" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/5"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/5"/>
 <wire x1="114.3" y1="20.32" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 <label x="114.3" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A14" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/8"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/8"/>
 <wire x1="116.84" y1="20.32" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
 <label x="116.84" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A15" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/3"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/3"/>
 <wire x1="119.38" y1="20.32" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
 <label x="119.38" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A16" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/4"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/4"/>
 <wire x1="121.92" y1="20.32" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
 <label x="121.92" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A17" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/11"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/11"/>
 <wire x1="124.46" y1="20.32" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
 <label x="124.46" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A20" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/10"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/10"/>
 <wire x1="195.58" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
 <label x="165.1" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A21" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/12"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/12"/>
 <wire x1="195.58" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
 <label x="165.1" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="_AS" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/14"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/14"/>
 <wire x1="114.3" y1="180.34" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
 <label x="114.3" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A18" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/17"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/17"/>
 <wire x1="195.58" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
 <label x="165.1" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A23" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/6"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/6"/>
 <wire x1="195.58" y1="68.58" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
 <label x="165.1" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A19" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/15"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/15"/>
 <wire x1="195.58" y1="86.36" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
 <label x="165.1" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A22" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB04/14"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB04/14"/>
 <wire x1="195.58" y1="71.12" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
 <label x="165.1" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SIZ1" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/11"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/11"/>
 <wire x1="121.92" y1="180.34" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
 <label x="121.92" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SIZ0" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/12"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/12"/>
 <wire x1="116.84" y1="180.34" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
 <label x="116.84" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="_DS" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/15"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/15"/>
 <wire x1="111.76" y1="180.34" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <label x="111.76" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="R_W" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB02/17"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB02/17"/>
 <wire x1="109.22" y1="180.34" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
 <label x="109.22" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="_DSACK_1" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/2"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/2"/>
 <wire x1="106.68" y1="180.34" x2="106.68" y2="121.92" width="0.1524" layer="91"/>
 <label x="106.68" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="_DSACK_0" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/5"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/5"/>
 <wire x1="104.14" y1="180.34" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
 <label x="104.14" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="PUNT_OUT" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/6"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/6"/>
 <wire x1="101.6" y1="180.34" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
 <label x="101.6" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="_KB_CLOCK" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/8"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/8"/>
 <wire x1="99.06" y1="180.34" x2="99.06" y2="121.92" width="0.1524" layer="91"/>
 <label x="99.06" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="_KB_DATA" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/3"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/3"/>
 <wire x1="96.52" y1="180.34" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
 <label x="96.52" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="PUNT_IN" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/4"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/4"/>
 <wire x1="93.98" y1="180.34" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
 <label x="93.98" y="144.78" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="137.16" x2="43.18" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="137.16" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
+<label x="25.4" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_NSS" class="0">
 <segment>
 <wire x1="12.7" y1="88.9" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
 <label x="33.02" y="88.9" size="1.778" layer="95"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/5"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/5"/>
 </segment>
 </net>
 <net name="SPI_CK" class="0">
 <segment>
 <wire x1="12.7" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
 <label x="33.02" y="99.06" size="1.778" layer="95"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/17"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/17"/>
 </segment>
 </net>
 <net name="SPI_MISO" class="0">
 <segment>
 <wire x1="12.7" y1="101.6" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
 <label x="33.02" y="101.6" size="1.778" layer="95"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/15"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/15"/>
 </segment>
 </net>
 <net name="SPI_MOSI" class="0">
 <segment>
 <wire x1="12.7" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
 <label x="33.02" y="104.14" size="1.778" layer="95"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/10"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/10"/>
 </segment>
 </net>
 <net name="UART5_TX" class="0">
 <segment>
 <wire x1="12.7" y1="91.44" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
 <label x="33.02" y="91.44" size="1.778" layer="95"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/12"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/12"/>
 </segment>
 </net>
 <net name="UART5_RX" class="0">
 <segment>
 <wire x1="12.7" y1="93.98" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
 <label x="33.02" y="93.98" size="1.778" layer="95"/>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB03/2"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB03/2"/>
 </segment>
 </net>
 <net name="_TXD" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="PB01/14"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/14"/>
 <wire x1="12.7" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
 <label x="33.02" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="_RXD" class="0">
 <segment>
-<pinref part="XC9572XL(BUS)" gate="XC9572XL-VQ64" pin="GCLK2"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="GCLK2"/>
 <wire x1="86.36" y1="180.34" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
 <label x="86.36" y="144.78" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="180.34" x2="43.18" y2="162.56" width="0.1524" layer="91"/>
+<label x="45.72" y="172.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
