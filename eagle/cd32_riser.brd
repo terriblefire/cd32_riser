@@ -172,7 +172,7 @@
 (C) 2020 S.J Leary
 Revision 0 
 
-Publushed Under the GNU GPLv2</text>
+Published Under the GNU GPLv2</text>
 <text x="103.241353125" y="55.365246875" size="0.8" layer="25" align="center">USB Circuit Based on HID2AMI v1.1.0 DeLuxe
 by EmberHeavyIndustres 2019
 https://github.com/EmberHeavyIndustries/HID2AMI</text>
@@ -2644,8 +2644,10 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="16.75306875" y="57.213184375" size="0.508" layer="27" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="19.795503125" y="52.309840625" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP3Q" package3d_urn="urn:adsk.eagle:package:15460/1" value="" x="40.13375625" y="56.70475625">
-<attribute name="NAME" x="36.70475625" y="59.62575625" size="0.508" layer="25" ratio="10"/>
+<element name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP3Q" package3d_urn="urn:adsk.eagle:package:15460/1" value="" x="40.13375625" y="56.70475625" smashed="yes">
+<attribute name="NAME" x="33.964440625" y="52.639153125" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="43.8643125" y="52.909353125" size="0.508" layer="25" ratio="10"/>
+<attribute name="VALUE" x="36.70475625" y="50.86275625" size="1.27" layer="27" ratio="10"/>
 <attribute name="VALUE" x="36.70475625" y="50.86275625" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" package="SJ_2" package3d_urn="urn:adsk.eagle:package:15474/1" value="" x="28.2218125" y="56.38975625" rot="R270">

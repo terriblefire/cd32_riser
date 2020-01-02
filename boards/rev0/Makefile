@@ -3,7 +3,7 @@ BOARD=cd32_riser
 BOARDPREFIX=$(BOARD)r$(REVISION)
 
 RTLFOLDER=../../rtl/
-RTLSOURCES="$(RTLFOLDER)/main_top.v"
+RTLSOURCES="$(RTLFOLDER)/main_top.v $(RTLFOLDER)/user_io.v"
 
 all: clean $(BOARD)r$(REVISION)
 $(BOARD)r$(REVISION):

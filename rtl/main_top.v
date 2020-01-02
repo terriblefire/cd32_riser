@@ -48,6 +48,24 @@ module main_top(
 
 );
 
+
+//// user io has an extra spi channel outside minimig core ////
+user_io user_io(
+     .SPI_CLK(SPI_SCK),
+     .SPI_SS_IO(SPI_NSS),
+     .SPI_MISO(SPI_MISO),
+     .SPI_MOSI(SPI_MOSI),
+     .JOY0(joya),
+     .JOY1(joyb),
+     .MOUSE_BUTTONS(mouse_buttons),
+     .KBD_MOUSE_DATA(kbd_mouse_data),
+     .KBD_MOUSE_TYPE(kbd_mouse_type),
+     .KBD_MOUSE_STROBE(kbd_mouse_strobe),
+     .CORE_TYPE(8'ha1),    // minimig core id
+	 .BUTTONS(board_buttons),
+	 .SWITCHES(board_switches)
+  );
+
 // bare min to make the riser work with a card.
 assign PUNT_OUT = PUNT_IN ? 1'bz : 1'b0;
 
