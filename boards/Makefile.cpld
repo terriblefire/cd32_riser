@@ -35,7 +35,7 @@ endif
 
 # Part number
 ifndef PART
-PART=XC95288XL-10-TQ144
+PART=XC9572XL-10-VQ64
 endif
 
 # Constraints file
