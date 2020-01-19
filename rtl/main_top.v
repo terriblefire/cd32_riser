@@ -58,10 +58,14 @@ wire chipset_decode = A[23:12] != 12'hDFF;
 wire ciaa_decode = A[23:12] != 12'hBFE;
 wire ciab_decode = A[23:12] != 12'hBFD;
 
+// chipset locations
+localparam JOY0DAT_H = 12'h00A;
+localparam JOY0DAT_L = JOY0DAT_H + 1;
+localparam JOY1DAT_H = 12'h00C;
+localparam JOY1DAT_L = JOY1DAT_H + 1;
+
 wire [5:0] joya;
 wire [5:0] joyb;
-
-
 
 //// user io has an extra spi channel outside minimig core ////
 user_io user_io(
@@ -87,13 +91,59 @@ user_io user_io(
   );
 
 
+wire reading_data = (chipset_decode & ciaa_decode) | ~RW | ~PUNT_IN;
 
+reg [7:0] data_out;
+reg       punt_int;
+reg       dsack_int;
+reg [1:0] dsack_int_d;
 
-// bare min to make the riser work with a card.
-assign PUNT_OUT = PUNT_IN ? 1'bz : 1'b0;
+always @(posedge CLKCPU_A or posedge AS20) begin 
+
+    if (AS20 == 1'b1) begin 
+
+        punt_int <= 1'b1;
+        dsack_int <= 1'b1;
+        dsack_int_d <= 2'b11;
+
+    end else begin 
+
+        if (reading_data == 1'b0) begin 
+
+            punt_int <= 1'b0;
+
+            case (A[11:0]) 
+                
+                // basic joypad directional data. 
+                JOY0DAT_L: data_out <= {6'b000000,~joya[0],joya[2]^joya[0]};
+                JOY1DAT_H: data_out <= {6'b000000,~joya[1],joya[3]^joya[1]};
+                JOY1DAT_L: data_out <= {6'b000000,~joyb[0],joyb[2]^joyb[0]};
+                JOY1DAT_H: data_out <= {6'b000000,~joyb[1],joyb[3]^joyb[1]};
+                default: punt_int <= 1'b1;
+
+            endcase 
+
+        end 
+
+        dsack_int <= DS20 | punt_int;
+        dsack_int_d <=  {dsack_int_d[0], dsack_int};
+
+    end 
+
+end
+
+// punt works by respecting the accelerator punt over our punt.
+assign PUNT_OUT = PUNT_IN ? punt_int : 1'b0;
 
 // pass the amiga serial port to the ARM so we can see its debug output
-assign UART5_RX = TXD;
-assign RXD = UART5_TX;
+assign UART5_RX = TXD ? 1'bz : 1'b0;
+assign RXD = UART5_TX ? 1'bz : 1'b0;
+
+assign KB_DATA = 1'bz;
+assign KB_CLOCK = 1'bz;
+
+assign D[31:24] = dsack_int_d[0] ? {8{1'bz}} : data_out;
+assign DSACK = punt_int ? 2'bzz : {1'b1, dsack_int_d[1]};
+
 
 endmodule
