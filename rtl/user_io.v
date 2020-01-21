@@ -34,7 +34,8 @@ module user_io(
 		output [7:0] KBD_MOUSE_DATA,
 
 		output [1:0] BUTTONS,
-		output [1:0] SWITCHES
+		output [1:0] SWITCHES,
+		output [15:0] MOUSE_DATA
 	   );
 
    reg [6:0]         sbuf;
@@ -47,8 +48,10 @@ module user_io(
 	reg               kbd_mouse_strobe;
    reg [1:0]         kbd_mouse_type;
    reg [7:0]         kbd_mouse_data;
-   reg [2:0]         mouse_buttons;
-
+   reg [2:0]         mouse_buttons = 3'b000;
+	reg [7:0]		   mousex = 0;
+	reg [7:0]		   mousey = 0;
+	
 	assign JOY0 = joystick0;
 	assign JOY1 = joystick1;
 
@@ -65,10 +68,14 @@ module user_io(
 		  SPI_MISO <= CORE_TYPE[7-cnt];
 	end
 		
-   always@(posedge SPI_CLK) begin
+   always@(posedge SPI_CLK or posedge SPI_SS_IO) begin
+
 		if(SPI_SS_IO == 1) begin
+
         cnt <= 0;
+		
 		end else begin
+		
 			sbuf[6:1] <= sbuf[5:0];
 			sbuf[0] <= SPI_MOSI;
 
@@ -107,9 +114,7 @@ module user_io(
 			   end
 		           // mouse, keyboard or OSD
 			   if((cmd == 4)||(cmd == 5)||(cmd == 6)) begin
-					 kbd_mouse_data[7:1] <= sbuf[6:0]; 
-					 kbd_mouse_data[0] <= SPI_MOSI; 
-					 kbd_mouse_strobe <= 1;		
+					 mousex <= {sbuf[6:0], SPI_MOSI};
 				end
 			end	
 			
@@ -118,10 +123,7 @@ module user_io(
 
 				// second byte contains movement data
 				if(cnt == 23) begin
-					 kbd_mouse_data[7:1] <= sbuf[6:0]; 
-					 kbd_mouse_data[0] <= SPI_MOSI; 
-					 kbd_mouse_strobe <= 1;		
-					 kbd_mouse_type <= 2'b01;
+					 mousey <= {sbuf[6:0], SPI_MOSI}; 
 				end
 				
 				// third byte contains the buttons
@@ -132,5 +134,9 @@ module user_io(
 			end
 		end
 	end
+
+assign MOUSE_DATA = {mousey, mousex};
+
+
       
 endmodule
