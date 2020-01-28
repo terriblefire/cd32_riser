@@ -1,0 +1,3 @@
+user_io.c:26:6:spi_mouse_io	16	static
+user_io.c:87:6:user_io_mouse	16	static
+user_io.c:95:6:user_io_keyboard	4	static

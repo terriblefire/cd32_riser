@@ -1,0 +1,81 @@
+#include "user_io.h"
+#include "keycodes.h"
+
+#include "stm32f1xx_hal.h"
+
+// mouse position storage for ps2 and minimig rate limitation
+#define X 0
+#define Y 1
+#define MOUSE_FREQ 20   // 20 ms -> 50hz
+
+static int16_t mouse_pos[2] = { 0, 0};
+static uint8_t mouse_flags = 0;
+
+
+typedef struct MOUSE_CMD {
+   uint8_t cmd;
+   int8_t x;
+   int8_t y;
+   uint8_t flags;
+} __attribute__((packed)) MOUSE_CMD;
+
+extern SPI_HandleTypeDef hspi3;
+
+void spi_mouse_io()
+{
+	MOUSE_CMD packet;
+
+	packet.cmd = UIO_MOUSE;
+
+	// ----- X axis -------
+	if(mouse_pos[X] < -128)
+	{
+		packet.x = -128;
+		mouse_pos[X] += 128;
+	}
+	else if(mouse_pos[X] > 127)
+	{
+		packet.x = 127;
+		mouse_pos[X] -= 127;
+	}
+	else
+	{
+		packet.x = mouse_pos[X];
+		mouse_pos[X] = 0;
+	}
+
+	// ----- Y axis -------
+	if(mouse_pos[Y] < -128) {
+		packet.y = -128;
+	  mouse_pos[Y] += 128;
+	} else if(mouse_pos[Y] > 127) {
+		packet.y = 127;
+	  mouse_pos[Y] -= 127;
+	} else {
+		packet.y = mouse_pos[Y];
+	  mouse_pos[Y] = 0;
+	}
+
+	packet.flags = mouse_flags & 0x03;
+	packet.x = 50;
+	packet.y = 50;
+
+	HAL_SPI_Transmit(&hspi3, (uint8_t*)&packet, sizeof(MOUSE_CMD), 1000);
+
+}
+
+
+void user_io_mouse(unsigned char b, char x, char y)
+{
+	// send mouse data as minimig expects it
+    mouse_pos[X] += x;
+    mouse_pos[Y] += y;
+    mouse_flags |= 0x80 | (b&3);
+}
+
+void user_io_keyboard(void)
+{
+
+}
+
+

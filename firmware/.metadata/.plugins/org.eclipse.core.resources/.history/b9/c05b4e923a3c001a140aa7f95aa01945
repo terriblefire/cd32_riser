@@ -1,0 +1,23 @@
+#include "user_io.h"
+#include "keycodes.h"
+
+// mouse position storage for ps2 and minimig rate limitation
+#define X 0
+#define Y 1
+#define MOUSE_FREQ 20   // 20 ms -> 50hz
+static int16_t mouse_pos[2] = { 0, 0};
+static uint8_t mouse_flags = 0;
+
+
+void user_io_mouse(unsigned char b, char x, char y)
+{
+	// send mouse data as minimig expects it
+    mouse_pos[X] += x;
+    mouse_pos[Y] += y;
+    mouse_flags |= 0x80 | (b&3);
+}
+
+void user_io_keyboard()
+{
+
+}
