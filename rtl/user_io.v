@@ -63,11 +63,12 @@ module user_io(
 	assign BUTTONS = but_sw[1:0];
 	assign SWITCHES = but_sw[3:2];
    
+	 // not used
    always@(negedge SPI_CLK) begin
       if(cnt < 8)
 		  SPI_MISO <= CORE_TYPE[7-cnt];
 	end
-		
+   	
    always@(posedge SPI_CLK or posedge SPI_SS_IO) begin
 
 		if(SPI_SS_IO == 1) begin
