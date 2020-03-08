@@ -12,7 +12,7 @@
   * This software component is licensed by ST under Ultimate Liberty license
   * SLA0044, the "License"; You may not use this file except in compliance with
   * the License. You may obtain a copy of the License at:
-  *                      www.st.com/SLA0044
+  *                      http://www.st.com/SLA0044
   *
   ******************************************************************************
   */
@@ -22,11 +22,12 @@
 #define  USBH_DEF_H
 
 #ifdef __cplusplus
-extern "C" {
+ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
 #include "usbh_conf.h"
+#include "usbh_hid_reportparser.h"
 
 /** @addtogroup USBH_LIB
   * @{
@@ -168,7 +169,7 @@ extern "C" {
 #define  USB_EP_DIR_MSK                                    0x80U
 
 #ifndef USBH_MAX_PIPES_NBR
-#define USBH_MAX_PIPES_NBR                                15U
+ #define USBH_MAX_PIPES_NBR                                15U
 #endif /* USBH_MAX_PIPES_NBR */
 
 #define USBH_DEVICE_ADDRESS_DEFAULT                        0x00U
@@ -225,8 +226,8 @@ USB_Setup_TypeDef;
 
 typedef  struct  _DescHeader
 {
-  uint8_t  bLength;
-  uint8_t  bDescriptorType;
+    uint8_t  bLength;
+    uint8_t  bDescriptorType;
 }
 USBH_DescHeader_t;
 
@@ -303,7 +304,7 @@ typedef enum
   USBH_NOT_SUPPORTED,
   USBH_UNRECOVERED_ERROR,
   USBH_ERROR_SPEED_UNKNOWN,
-} USBH_StatusTypeDef;
+}USBH_StatusTypeDef;
 
 
 /** @defgroup USBH_CORE_Exported_Types
@@ -316,7 +317,7 @@ typedef enum
   USBH_SPEED_FULL  = 1U,
   USBH_SPEED_LOW   = 2U,
 
-} USBH_SpeedTypeDef;
+}USBH_SpeedTypeDef;
 
 /* Following states are used for gState */
 typedef enum
@@ -335,7 +336,7 @@ typedef enum
   HOST_CLASS,
   HOST_SUSPENDED,
   HOST_ABORT_STATE,
-} HOST_StateTypeDef;
+}HOST_StateTypeDef;
 
 /* Following states are used for EnumerationState */
 typedef enum
@@ -367,7 +368,7 @@ typedef enum
   CTRL_ERROR,
   CTRL_STALLED,
   CTRL_COMPLETE
-} CTRL_StateTypeDef;
+}CTRL_StateTypeDef;
 
 
 /* Following states are used for RequestState */
@@ -378,15 +379,14 @@ typedef enum
   CMD_WAIT
 } CMD_StateTypeDef;
 
-typedef enum
-{
+typedef enum {
   USBH_URB_IDLE = 0U,
   USBH_URB_DONE,
   USBH_URB_NOTREADY,
   USBH_URB_NYET,
   USBH_URB_ERROR,
   USBH_URB_STALL
-} USBH_URBStateTypeDef;
+}USBH_URBStateTypeDef;
 
 typedef enum
 {
@@ -423,13 +423,14 @@ typedef struct
   uint8_t                           address;
   uint8_t                           speed;
   __IO uint8_t                      is_connected;
-  __IO uint8_t                      is_disconnected;
-  __IO uint8_t                      is_ReEnumerated;
   uint8_t                           PortEnabled;
   uint8_t                           current_interface;
   USBH_DevDescTypeDef               DevDesc;
   USBH_CfgDescTypeDef               CfgDesc;
-} USBH_DeviceTypeDef;
+  // TODO LEGACY Structure need to remove RptDesc below
+   //hid_report_t						RptDesc;
+
+}USBH_DeviceTypeDef;
 
 struct _USBH_HandleTypeDef;
 
@@ -438,12 +439,15 @@ typedef struct
 {
   const char          *Name;
   uint8_t              ClassCode;
-  USBH_StatusTypeDef(*Init)(struct _USBH_HandleTypeDef *phost);
-  USBH_StatusTypeDef(*DeInit)(struct _USBH_HandleTypeDef *phost);
-  USBH_StatusTypeDef(*Requests)(struct _USBH_HandleTypeDef *phost);
-  USBH_StatusTypeDef(*BgndProcess)(struct _USBH_HandleTypeDef *phost);
-  USBH_StatusTypeDef(*SOFProcess)(struct _USBH_HandleTypeDef *phost);
-  void                *pData;
+  USBH_StatusTypeDef  (*Init)        (struct _USBH_HandleTypeDef *phost);
+  USBH_StatusTypeDef  (*DeInit)      (struct _USBH_HandleTypeDef *phost);
+  USBH_StatusTypeDef  (*Requests)    (struct _USBH_HandleTypeDef *phost);
+  USBH_StatusTypeDef  (*BgndProcess) (struct _USBH_HandleTypeDef *phost);
+  USBH_StatusTypeDef  (*SOFProcess) (struct _USBH_HandleTypeDef *phost);
+  uint8_t             interfaces;
+  uint8_t             iface_initnum;
+  uint8_t             iface_init;
+  void*               pData[USBH_MAX_NUM_INTERFACES];
 } USBH_ClassTypeDef;
 
 /* USB Host handle structure */
@@ -454,14 +458,14 @@ typedef struct _USBH_HandleTypeDef
   CMD_StateTypeDef      RequestState;
   USBH_CtrlTypeDef      Control;
   USBH_DeviceTypeDef    device;
-  USBH_ClassTypeDef    *pClass[USBH_MAX_NUM_SUPPORTED_CLASS];
-  USBH_ClassTypeDef    *pActiveClass;
+  USBH_ClassTypeDef*    pClass[USBH_MAX_NUM_SUPPORTED_CLASS];
+  USBH_ClassTypeDef*    pActiveClass;
   uint32_t              ClassNumber;
-  uint32_t              Pipes[16];
+  uint32_t              Pipes[15];
   __IO uint32_t         Timer;
   uint8_t               id;
-  void                 *pData;
-  void (* pUser)(struct _USBH_HandleTypeDef *pHandle, uint8_t id);
+  void*                 pData;
+  void                 (* pUser )(struct _USBH_HandleTypeDef *pHandle, uint8_t id);
 
 #if (USBH_USE_OS == 1U)
 #if osCMSIS < 0x20000
@@ -478,12 +482,12 @@ typedef struct _USBH_HandleTypeDef
 
 
 #if  defined ( __GNUC__ )
-#ifndef __weak
-#define __weak   __attribute__((weak))
-#endif /* __weak */
-#ifndef __packed
-#define __packed __attribute__((__packed__))
-#endif /* __packed */
+  #ifndef __weak
+    #define __weak   __attribute__((weak))
+  #endif /* __weak */
+  #ifndef __packed
+    #define __packed __attribute__((__packed__))
+  #endif /* __packed */
 #endif /* __GNUC__ */
 
 #ifdef __cplusplus
