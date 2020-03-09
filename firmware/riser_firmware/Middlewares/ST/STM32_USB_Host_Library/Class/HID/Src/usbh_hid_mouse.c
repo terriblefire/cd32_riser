@@ -118,8 +118,6 @@ USBH_StatusTypeDef USBH_HID_MouseInit(USBH_HandleTypeDef *phost)
   mouse_info.buttons[1] = 0U;
   mouse_info.buttons[2] = 0U;
 
-  mouse_report_data[0] = 0U;
-
   HID_Handle->length = reportSize;
 
 
