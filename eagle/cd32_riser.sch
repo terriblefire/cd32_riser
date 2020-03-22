@@ -16046,6 +16046,27 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/7874198P"&gt; Datashe
 <wire x1="104.14" y1="78.74" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="A0" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PC4"/>
+<wire x1="35.56" y1="116.84" x2="10.16" y2="116.84" width="0.1524" layer="91"/>
+<label x="17.78" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A1" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PC6"/>
+<wire x1="35.56" y1="114.3" x2="10.16" y2="114.3" width="0.1524" layer="91"/>
+<label x="17.78" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A2" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PC7"/>
+<wire x1="35.56" y1="111.76" x2="10.16" y2="111.76" width="0.1524" layer="91"/>
+<label x="17.78" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -16534,25 +16555,18 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/7874198P"&gt; Datashe
 <label x="104.14" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="SPI2_CK" class="0">
+<net name="SPI2_MISO" class="0">
 <segment>
 <wire x1="12.7" y1="101.6" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/15"/>
 <label x="33.02" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SPI2_MISO" class="0">
-<segment>
-<wire x1="12.7" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/10"/>
-<label x="33.02" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SPI2_MOSI" class="0">
 <segment>
-<wire x1="86.36" y1="180.34" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="GCLK2"/>
-<label x="86.36" y="144.78" size="1.778" layer="95" rot="R90"/>
+<wire x1="12.7" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/14"/>
+<label x="33.02" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -16592,9 +16606,9 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/7874198P"&gt; Datashe
 </net>
 <net name="INTSIG8" class="0">
 <segment>
-<wire x1="71.12" y1="106.68" x2="12.7" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/14"/>
-<label x="33.02" y="106.68" size="1.778" layer="95"/>
+<wire x1="71.12" y1="104.14" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/10"/>
+<label x="33.02" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INTSIG6" class="0">
@@ -16623,6 +16637,14 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/7874198P"&gt; Datashe
 <pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="PB01/12"/>
 <wire x1="71.12" y1="91.44" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
 <label x="33.02" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPI2_CK" class="0">
+<segment>
+<pinref part="XC9572XL" gate="XC9572XL-VQ64" pin="GCLK2"/>
+<wire x1="86.36" y1="121.92" x2="86.36" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="180.34" x2="83.82" y2="180.34" width="0.1524" layer="91"/>
+<label x="86.36" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
