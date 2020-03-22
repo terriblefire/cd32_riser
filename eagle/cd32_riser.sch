@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13856,7 +13856,7 @@ Source: RS Component / Phycomp</description>
 <part name="U$3" library="1_Brian" deviceset="25PINCUSTOM" device=""/>
 <part name="CN1" library="Amiga" deviceset="CD32-EXPANSION" device=""/>
 <part name="CN2" library="Amiga" deviceset="CD32-EXPANSION" device=""/>
-<part name="C16" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
+<part name="C16" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100nF"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C14" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
@@ -13871,7 +13871,7 @@ Source: RS Component / Phycomp</description>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C7" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100k"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100K"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device=""/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="BOOT0" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2E" device="" package3d_urn="urn:adsk.eagle:package:15452/1"/>
@@ -13882,7 +13882,7 @@ Source: RS Component / Phycomp</description>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="C3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="10u"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
-<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10u"/>
+<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1"/>
 <part name="PWR" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1"/>
@@ -13890,16 +13890,16 @@ Source: RS Component / Phycomp</description>
 <part name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP3Q" device="" package3d_urn="urn:adsk.eagle:package:15460/1"/>
 <part name="JTAG" library="microbuilder" deviceset="HEADER-1X6" device="ROUND" value="JTAG"/>
 <part name="XC9572XL" library="terriblefire" deviceset="XC9572XL-VQ64" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="4K7"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="10k"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="10k"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BAT54" device="" package3d_urn="urn:adsk.eagle:package:43389/2"/>
-<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
-<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
-<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
-<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
-<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="U2" library="STM32F722RET6" deviceset="STM32F722RET6" device=""/>
 <part name="G1" library="battery" library_urn="urn:adsk.eagle:library:109" deviceset="CH23-1220LF" device="" package3d_urn="urn:adsk.eagle:package:4614/1"/>
 <part name="U$1" library="board" deviceset="USB-A-2_USB_USB-A-2" device=""/>
@@ -13938,13 +13938,22 @@ Source: RS Component / Phycomp</description>
 <attribute name="VALUE" x="325.12" y="103.632" size="1.778" layer="96"/>
 <attribute name="NAME" x="317.5" y="103.632" size="1.778" layer="95"/>
 </instance>
-<instance part="RN2" gate="A" x="309.88" y="129.54" rot="R180"/>
-<instance part="RN2" gate="B" x="309.88" y="134.62" rot="R180"/>
+<instance part="RN2" gate="A" x="309.88" y="129.54" smashed="yes" rot="R180">
+<attribute name="VALUE" x="307.34" y="132.588" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="314.96" y="132.588" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="RN2" gate="B" x="309.88" y="134.62" smashed="yes" rot="R180">
+<attribute name="VALUE" x="307.34" y="137.668" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="314.96" y="137.668" size="1.778" layer="95" rot="R180"/>
+</instance>
 <instance part="RN2" gate="C" x="309.88" y="139.7" smashed="yes" rot="R180">
 <attribute name="VALUE" x="307.34" y="142.748" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="314.96" y="142.748" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="RN2" gate="D" x="309.88" y="144.78" rot="R180"/>
+<instance part="RN2" gate="D" x="309.88" y="144.78" smashed="yes" rot="R180">
+<attribute name="VALUE" x="307.34" y="147.828" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="314.96" y="147.828" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16405,7 +16414,10 @@ Source: RS Component / Phycomp</description>
 <attribute name="NAME" x="120.65" y="91.44" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="120.65" y="88.9" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="DAC" gate="G$1" x="160.02" y="175.26" rot="R270"/>
+<instance part="DAC" gate="G$1" x="160.02" y="175.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="160.02" y="176.53" size="1.778" layer="95"/>
+<attribute name="VALUE" x="160.02" y="167.005" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="A[0..31],AB,AB_EXT,_ACTIVE,AG,AG_EXT,AGND,AR,AR_EXT,_AS,_AVEC,_BEER,_BLANK,BOOT,BUS_INT,CCK_B,CLK_17MHZ,_CPU_BG,_CPU_BR,CPUCLK_A,_CSYNC,D[0..31],DA_BCLK,DAC1,DAC2,DA_DATA,DA_LRCLK,DB,DG,DI,_DKRD,_DKWD,DKWE,DR,_DS,_DSACK_0,_DSACK_1,_EXP_BG,_EXP_BR,_EXT_AUDIO,_EXT_VIDEO,FC[0..2],_FIRE0,_FIRE1,GND,_HLT,_HSYNC,_INT2,_INT6,INTSIG[0..8],_IPL[0..2],_KB_CLOCK,_KB_DATA,_LED,LED,LEFT,LEFT_EXT,_MUTE,NC,NRST,_NTSC,OSCIN,OSCOUT,PA9BOOT,PIXELCLK,_PIXELSW,_PIXELSW_EXT,_PUNT,PUNT_IN,PUNT_OUT,_RESET,RIGHT,RIGHT_EXT,_RMC,_RST,R_W,_RXD,SIZ[0..1],SJ[1..4],SPI2_CK,SPI2_MISO,SPI2_MOSI,SPI2_NSS,SWCLK,SWDIO,_TXD,UART4_RX,UART4_TX,UART5_RX,UART5_TX,USB1_DM,USB1_DP,USB2_DM,USB2_DP,VBAT,VCC,VCC12V,VCC33,VDD,VGND,VSS,_VSYNC,XCLK,_XCLKEN">
