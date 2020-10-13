@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3497,15 +3497,6 @@ Metric Code Size 4564</description>
 <rectangle x1="-2.8" y1="-3.15" x2="-2.2" y2="3.15" layer="51"/>
 <rectangle x1="2.2" y1="-3.15" x2="2.8" y2="3.15" layer="51"/>
 </package>
-<package name="HPC0201" urn="urn:adsk.eagle:footprint:23195/1" library_version="3">
-<description>&lt;b&gt; &lt;/b&gt;&lt;p&gt;
-Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
-<smd name="1" x="-0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
-<smd name="2" x="0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
-<text x="-0.75" y="0.74" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.785" y="-1.865" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.305" y1="-0.15" x2="0.305" y2="0.15" layer="51"/>
-</package>
 <package name="C0201" urn="urn:adsk.eagle:footprint:23196/1" library_version="3">
 <description>Source: http://www.avxcorp.com/docs/catalogs/cx5r.pdf</description>
 <smd name="1" x="-0.25" y="0" dx="0.25" dy="0.35" layer="1"/>
@@ -5112,20 +5103,17 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
 <rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
+<package name="HPC0201" urn="urn:adsk.eagle:footprint:25783/1" library_version="11">
+<description>&lt;b&gt; &lt;/b&gt;&lt;p&gt;
+Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
+<smd name="1" x="-0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
+<smd name="2" x="0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
+<text x="-0.75" y="0.74" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.785" y="-1.865" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.305" y1="-0.15" x2="0.305" y2="0.15" layer="51"/>
+</package>
 </packages>
 <packages3d>
-<package3d name="C0402" urn="urn:adsk.eagle:package:23626/1" type="box" library_version="3">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C0402"/>
-</packageinstances>
-</package3d>
-<package3d name="C0504" urn="urn:adsk.eagle:package:23624/1" type="box" library_version="3">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C0504"/>
-</packageinstances>
-</package3d>
 <package3d name="C0603" urn="urn:adsk.eagle:package:23616/2" type="model" library_version="3">
 <description>CAPACITOR</description>
 <packageinstances>
@@ -5148,12 +5136,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <description>CAPACITOR</description>
 <packageinstances>
 <packageinstance name="C1210"/>
-</packageinstances>
-</package3d>
-<package3d name="C1310" urn="urn:adsk.eagle:package:23620/1" type="box" library_version="3">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C1310"/>
 </packageinstances>
 </package3d>
 <package3d name="C1608" urn="urn:adsk.eagle:package:23621/2" type="model" library_version="3">
@@ -5596,13 +5578,6 @@ Metric Code Size 4532</description>
 <packageinstance name="C1812K"/>
 </packageinstances>
 </package3d>
-<package3d name="C1825K" urn="urn:adsk.eagle:package:23684/1" type="box" library_version="3">
-<description>Ceramic Chip Capacitor KEMET 1825 reflow solder
-Metric Code Size 4564</description>
-<packageinstances>
-<packageinstance name="C1825K"/>
-</packageinstances>
-</package3d>
 <package3d name="C2220K" urn="urn:adsk.eagle:package:23687/2" type="model" library_version="3">
 <description>Ceramic Chip Capacitor KEMET 2220 reflow solderMetric Code Size 5650</description>
 <packageinstances>
@@ -5613,13 +5588,6 @@ Metric Code Size 4564</description>
 <description>Ceramic Chip Capacitor KEMET 2225 reflow solderMetric Code Size 5664</description>
 <packageinstances>
 <packageinstance name="C2225K"/>
-</packageinstances>
-</package3d>
-<package3d name="HPC0201" urn="urn:adsk.eagle:package:23688/1" type="box" library_version="3">
-<description> 
-Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
-<packageinstances>
-<packageinstance name="HPC0201"/>
 </packageinstances>
 </package3d>
 <package3d name="C0201" urn="urn:adsk.eagle:package:23690/2" type="model" library_version="3">
@@ -6244,6 +6212,39 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <packageinstance name="R01005"/>
 </packageinstances>
 </package3d>
+<package3d name="CAPC1005X60" urn="urn:adsk.eagle:package:23626/2" type="model" library_version="11">
+<description>Chip, 1.00 X 0.50 X 0.60 mm body
+&lt;p&gt;Chip package with body size 1.00 X 0.50 X 0.60 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="C0402"/>
+</packageinstances>
+</package3d>
+<package3d name="C0504" urn="urn:adsk.eagle:package:23624/2" type="model" library_version="11">
+<description>CAPACITOR</description>
+<packageinstances>
+<packageinstance name="C0504"/>
+</packageinstances>
+</package3d>
+<package3d name="C1310" urn="urn:adsk.eagle:package:23620/2" type="model" library_version="11">
+<description>CAPACITOR</description>
+<packageinstances>
+<packageinstance name="C1310"/>
+</packageinstances>
+</package3d>
+<package3d name="C1825K" urn="urn:adsk.eagle:package:23684/2" type="model" library_version="11">
+<description>Ceramic Chip Capacitor KEMET 1825 reflow solder
+Metric Code Size 4564</description>
+<packageinstances>
+<packageinstance name="C1825K"/>
+</packageinstances>
+</package3d>
+<package3d name="HPC0201" urn="urn:adsk.eagle:package:26213/1" type="box" library_version="11">
+<description> 
+Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
+<packageinstances>
+<packageinstance name="HPC0201"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="C-EU" urn="urn:adsk.eagle:symbol:23120/1" library_version="3">
@@ -6268,7 +6269,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C-EU" urn="urn:adsk.eagle:component:23793/42" prefix="C" uservalue="yes" library_version="3">
+<deviceset name="C-EU" urn="urn:adsk.eagle:component:23793/46" prefix="C" uservalue="yes" library_version="11">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="C-EU" x="0" y="0"/>
@@ -6280,10 +6281,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23626/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23626/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="18" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6294,10 +6296,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23624/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23624/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6312,6 +6315,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="73" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6326,6 +6330,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="88" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6340,6 +6345,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="54" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6354,6 +6360,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6364,10 +6371,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23620/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23620/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6382,6 +6390,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6396,6 +6405,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6410,6 +6420,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6424,6 +6435,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6438,6 +6450,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6452,6 +6465,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6466,6 +6480,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6480,6 +6495,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6494,6 +6510,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="56" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6508,6 +6525,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="65" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6522,6 +6540,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="14" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6536,6 +6555,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6550,6 +6570,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="16" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6564,6 +6585,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6578,6 +6600,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6592,6 +6615,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6606,6 +6630,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6620,6 +6645,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6634,6 +6660,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6648,6 +6675,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="33" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6662,6 +6690,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="29" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6676,6 +6705,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6690,6 +6720,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="9" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6704,6 +6735,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6718,6 +6750,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6732,6 +6765,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6746,6 +6780,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6760,6 +6795,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6774,6 +6810,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6788,6 +6825,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6802,6 +6840,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6816,6 +6855,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6830,6 +6870,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6844,6 +6885,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6858,6 +6900,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6872,6 +6915,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6886,6 +6930,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6900,6 +6945,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6914,6 +6960,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6928,6 +6975,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6942,6 +6990,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6956,6 +7005,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6970,6 +7020,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6984,6 +7035,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6998,6 +7050,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7012,6 +7065,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7026,6 +7080,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7040,6 +7095,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7054,6 +7110,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7068,6 +7125,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7082,6 +7140,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7096,6 +7155,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7110,6 +7170,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7124,6 +7185,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7138,6 +7200,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7152,6 +7215,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7166,6 +7230,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7180,6 +7245,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7194,6 +7260,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="15" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7208,6 +7275,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="30" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7222,6 +7290,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="52" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7236,6 +7305,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="13" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7250,6 +7320,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7264,6 +7335,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7274,10 +7346,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23684/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23684/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7292,6 +7365,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7306,6 +7380,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7316,10 +7391,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23688/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:26213/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7334,6 +7410,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7348,6 +7425,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7362,6 +7440,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7376,6 +7455,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -13752,7 +13832,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
 <part name="C9" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
 <part name="C8" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
-<part name="C6" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
 <part name="C4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
 <part name="C2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
@@ -13805,6 +13885,11 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="29R9"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="29R9"/>
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
+<part name="C23" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="22p"/>
+<part name="C24" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="22p"/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="X2" library="SMD-CRYSTAL-8MHZ-20PF-20PPM_2P-5.0X3.2MM_" deviceset="SMD-CRYSTAL-8MHZ-20PF-20PPM(2P-5.0X3.2MM)" device="" value="SMD-CRYSTAL-32768KHZ-20PF-20PPM(2P-5.0X3.2MM)"/>
+<part name="JP3" library="SparkFun-Retired" deviceset="JUMPER-2" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -16129,7 +16214,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </sheet>
 <sheet>
 <plain>
-<text x="0" y="170.18" size="1.778" layer="91">UART4</text>
 <text x="139.7" y="193.04" size="1.778" layer="91">Debug Console</text>
 </plain>
 <instances>
@@ -16306,9 +16390,27 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <attribute name="NAME" x="143.764" y="152.781" size="1.778" layer="95"/>
 <attribute name="VALUE" x="143.764" y="147.701" size="1.778" layer="96"/>
 </instance>
+<instance part="C23" gate="G$1" x="157.48" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="157.099" y="57.404" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="162.179" y="57.404" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C24" gate="G$1" x="157.48" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="157.099" y="47.244" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="162.179" y="47.244" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND1" gate="1" x="170.18" y="50.8" smashed="yes" rot="R90">
+<attribute name="VALUE" x="172.72" y="48.26" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X2" gate="G$1" x="147.32" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="144.77693125" y="48.25693125" size="1.27153125" layer="95" ratio="10" rot="R90"/>
+</instance>
+<instance part="JP3" gate="A" x="147.32" y="248.92" smashed="yes" rot="R270">
+<attribute name="NAME" x="147.32" y="250.19" size="1.778" layer="95"/>
+<attribute name="VALUE" x="147.32" y="243.205" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
-<bus name="A[0..31],AB,AB_EXT,_ACTIVE,AG,AG_EXT,AGND,AR,AR_EXT,_AS,_AVEC,_BEER,_BLANK,BOOT,BUS_INT,CCK_B,CLK_17MHZ,_CPU_BG,_CPU_BR,CPUCLK_A,_CSYNC,D[0..31],DA_BCLK,DAC1,DAC2,DA_DATA,DA_LRCLK,DB,DG,DI,_DKRD,_DKWD,DKWE,DR,_DS,_DSACK_0,_DSACK_1,_EXP_BG,_EXP_BR,_EXT_AUDIO,_EXT_VIDEO,FC[0..2],_FIRE0,_FIRE1,GND,_HLT,_HSYNC,_INT2,_INT6,INTSIG[0..8],_IPL[0..2],_KB_CLOCK,_KB_DATA,_LED,LED,LEFT,LEFT_EXT,_MUTE,NC,NRST,_NTSC,OSCIN,OSCOUT,PA9BOOT,PIXELCLK,_PIXELSW,_PIXELSW_EXT,_PUNT,PUNT_IN,PUNT_OUT,_RESET,RIGHT,RIGHT_EXT,_RMC,_RST,R_W,_RXD,SIZ[0..1],SJ[1..4],SPI2_CK,SPI2_MISO,SPI2_MOSI,SPI2_NSS,SWCLK,SWDIO,_TXD,UART4_RX,UART4_TX,UART5_RX,UART5_TX,USB1_DM,USB1_DP,USB2_DM,USB2_DP,VBAT,VCAP,VCC,VCC12V,VCC33,VDD,VGND,VSS,_VSYNC,XCLK,_XCLKEN">
+<bus name="A[0..31],AB,AB_EXT,_ACTIVE,AG,AG_EXT,AGND,AR,AR_EXT,_AS,_AVEC,_BEER,_BLANK,BOOT,BUS_INT,CCK_B,CLK_17MHZ,_CPU_BG,_CPU_BR,CPUCLK_A,_CSYNC,D[0..31],DA_BCLK,DAC1,DAC2,DA_DATA,DA_LRCLK,DB,DG,DI,_DKRD,_DKWD,DKWE,DR,_DS,_DSACK_0,_DSACK_1,_EXP_BG,_EXP_BR,_EXT_AUDIO,_EXT_VIDEO,FC[0..2],_FIRE0,_FIRE1,GND,_HLT,_HSYNC,_INT2,_INT6,INTSIG[0..8],_IPL[0..2],_KB_CLOCK,_KB_DATA,_LED,LED,LEFT,LEFT_EXT,LSE_OSCIN,LSE_OSCOUT,_MUTE,NC,NRST,_NTSC,OSCIN,OSCOUT,PA9BOOT,PIXELCLK,_PIXELSW,_PIXELSW_EXT,_PUNT,PUNT_IN,PUNT_OUT,_RESET,RIGHT,RIGHT_EXT,_RMC,_RST,R_W,_RXD,SIZ[0..1],SJ[1..4],SPI2_CK,SPI2_MISO,SPI2_MOSI,SPI2_NSS,SWCLK,SWDIO,_TXD,UART4_RX,UART4_TX,UART5_RX,UART5_TX,USB1_DM,USB1_DP,USB2_DM,USB2_DP,VBAT,VCAP,VCC,VCC12V,VCC33,VDD,VGND,VSS,_VSYNC,XCLK,_XCLKEN">
 <segment>
 <wire x1="10.16" y1="259.08" x2="10.16" y2="5.08" width="0.762" layer="92"/>
 <wire x1="10.16" y1="259.08" x2="132.08" y2="259.08" width="0.762" layer="92"/>
@@ -16454,6 +16556,16 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="142.24" y1="129.54" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
 <label x="142.24" y="137.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="55.88" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="55.88" x2="167.64" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="50.8" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="45.72" x2="162.56" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<junction x="167.64" y="50.8"/>
+</segment>
 </net>
 <net name="VCC33" class="0">
 <segment>
@@ -16516,11 +16628,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="104.14" y1="233.68" x2="104.14" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="236.22" x2="109.22" y2="236.22" width="0.1524" layer="91"/>
 <label x="91.44" y="238.76" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="VBAT"/>
-<wire x1="96.52" y1="185.42" x2="132.08" y2="185.42" width="0.1524" layer="91"/>
-<label x="109.22" y="185.42" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VDD"/>
@@ -16741,17 +16848,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="30.48" y1="76.2" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="165.1" y1="220.98" x2="165.1" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="213.36" x2="167.64" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="213.36" x2="152.4" y2="213.36" width="0.1524" layer="91"/>
-<junction x="165.1" y="213.36"/>
-<pinref part="G1" gate="G1" pin="+"/>
-</segment>
-</net>
 <net name="USB1_DM" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PA11"/>
@@ -16802,16 +16898,16 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="_TXD" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="PA1"/>
-<wire x1="35.56" y1="170.18" x2="10.16" y2="170.18" width="0.1524" layer="91"/>
-<label x="20.32" y="170.18" size="1.778" layer="95"/>
+<pinref part="JP3" gate="A" pin="1"/>
+<wire x1="144.78" y1="248.92" x2="132.08" y2="248.92" width="0.1524" layer="91"/>
+<label x="134.62" y="251.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="_RXD" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="PA0-WKUP"/>
-<wire x1="35.56" y1="172.72" x2="10.16" y2="172.72" width="0.1524" layer="91"/>
-<label x="20.32" y="172.72" size="1.778" layer="95"/>
+<pinref part="JP3" gate="A" pin="2"/>
+<wire x1="144.78" y1="246.38" x2="132.08" y2="246.38" width="0.1524" layer="91"/>
+<label x="134.62" y="243.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="_KB_CLOCK" class="0">
@@ -16893,16 +16989,9 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="R_W" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="PC14-OSC32_IN"/>
-<wire x1="96.52" y1="114.3" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
-<label x="109.22" y="114.3" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="_DSACK_0" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="PC15-OSC32_OUT"/>
-<wire x1="96.52" y1="111.76" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
-<label x="109.22" y="111.76" size="1.778" layer="95"/>
+<wire x1="96.52" y1="116.84" x2="132.08" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="PC13"/>
+<label x="109.22" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INTSIG2" class="0">
@@ -16945,13 +17034,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pinref part="U2" gate="G$1" pin="PC11"/>
 <wire x1="96.52" y1="121.92" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 <label x="109.22" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="INTSIG8" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="PC13"/>
-<wire x1="96.52" y1="116.84" x2="132.08" y2="116.84" width="0.1524" layer="91"/>
-<label x="109.22" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI2_MISO" class="0">
@@ -17005,9 +17087,9 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="_KB_DATA" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="PC3"/>
-<wire x1="35.56" y1="119.38" x2="10.16" y2="119.38" width="0.1524" layer="91"/>
-<label x="17.78" y="119.38" size="1.778" layer="95"/>
+<wire x1="35.56" y1="170.18" x2="10.16" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="PA1"/>
+<label x="20.32" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI2_CK" class="0">
@@ -17103,6 +17185,67 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="142.24" y1="154.94" x2="142.24" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="162.56" x2="132.08" y2="162.56" width="0.1524" layer="91"/>
 <label x="144.78" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VBAT" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="VBAT"/>
+<wire x1="96.52" y1="185.42" x2="132.08" y2="185.42" width="0.1524" layer="91"/>
+<label x="109.22" y="185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="165.1" y1="220.98" x2="165.1" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="213.36" x2="167.64" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="213.36" x2="152.4" y2="213.36" width="0.1524" layer="91"/>
+<junction x="165.1" y="213.36"/>
+<pinref part="G1" gate="G1" pin="+"/>
+</segment>
+</net>
+<net name="LSE_OSCIN" class="0">
+<segment>
+<wire x1="154.94" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<pinref part="X2" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="55.88" x2="147.32" y2="54.61" width="0.1524" layer="91"/>
+<label x="134.62" y="60.96" size="1.778" layer="95"/>
+<wire x1="147.32" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<junction x="147.32" y="55.88"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="PC14-OSC32_IN"/>
+<wire x1="96.52" y1="114.3" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
+<label x="109.22" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LSE_OSCOUT" class="0">
+<segment>
+<wire x1="154.94" y1="45.72" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<pinref part="X2" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="45.72" x2="147.32" y2="46.99" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="45.72" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
+<junction x="147.32" y="45.72"/>
+<label x="134.62" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="PC15-OSC32_OUT"/>
+<wire x1="96.52" y1="111.76" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<label x="109.22" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A5" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PC3"/>
+<wire x1="35.56" y1="119.38" x2="10.16" y2="119.38" width="0.1524" layer="91"/>
+<label x="17.78" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="INTSIG8" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PA0-WKUP"/>
+<wire x1="35.56" y1="172.72" x2="10.16" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
