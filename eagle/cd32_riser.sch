@@ -13892,6 +13892,154 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit" urn="urn:adsk.eagle:library:420">
+<packages>
+<package name="NX8045" urn="urn:adsk.eagle:footprint:6239994/1" library_version="2">
+<wire x1="4" y1="-1.9172" x2="3.7172" y2="-2.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="3.7172" y1="-2.2" x2="-3.7172" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-3.7172" y1="-2.2" x2="-4" y2="-1.9172" width="0.127" layer="21" curve="-90"/>
+<wire x1="-4" y1="-1.9172" x2="-4" y2="1.9764" width="0.127" layer="21"/>
+<wire x1="-4" y1="1.9764" x2="-3.7764" y2="2.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="-3.7764" y1="2.2" x2="3.6838" y2="2.2" width="0.127" layer="21"/>
+<wire x1="3.6838" y1="2.2" x2="4" y2="1.8838" width="0.127" layer="21" curve="-90"/>
+<wire x1="4" y1="1.8838" x2="4" y2="-1.9172" width="0.127" layer="21"/>
+<wire x1="-3" y1="1.9" x2="3.1" y2="1.9" width="0.127" layer="21"/>
+<wire x1="3.1" y1="1.9" x2="3.5" y2="1.4" width="0.127" layer="21" curve="-90"/>
+<wire x1="3.5" y1="1.4" x2="3.5" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-1.4" x2="3.1" y2="-1.8" width="0.127" layer="21" curve="-90"/>
+<wire x1="3.1" y1="-1.8" x2="-3.1" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-1.8" x2="-3.5" y2="-1.4" width="0.127" layer="21" curve="-90"/>
+<wire x1="-3.5" y1="-1.4" x2="-3.5" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="1.4" x2="-3" y2="1.9" width="0.127" layer="21" curve="-90"/>
+<smd name="P$1" x="3.3" y="0" dx="3" dy="2.5" layer="1" rot="R90"/>
+<smd name="P$2" x="-3.2" y="0" dx="3" dy="2.5" layer="1" rot="R90"/>
+<text x="-2.7" y="2.8" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-3.2" y="-3.9" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="NX5032" urn="urn:adsk.eagle:footprint:6239995/1" library_version="2">
+<wire x1="2.5" y1="-1.2172" x2="2.2172" y2="-1.6" width="0.127" layer="21" curve="-90"/>
+<wire x1="2.2172" y1="-1.6" x2="-2.2172" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.2172" y1="-1.6" x2="-2.5" y2="-1.2172" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2.5" y1="-1.2172" x2="-2.5" y2="1.3764" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.3764" x2="-2.2764" y2="1.6" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2.2764" y1="1.6" x2="2.1838" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.1838" y1="1.6" x2="2.5" y2="1.2838" width="0.127" layer="21" curve="-90"/>
+<wire x1="2.5" y1="1.2838" x2="2.5" y2="-1.2172" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="1.3" x2="1.4" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.4" y1="1.3" x2="2" y2="0.6" width="0.127" layer="21" curve="-89.967269"/>
+<wire x1="2" y1="0.6" x2="2" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.8" x2="1.4" y2="-1.3" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.4" y1="-1.3" x2="-1.3" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-1.3" x2="-2" y2="-0.7" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2" y1="-0.7" x2="-2" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-2" y1="0.7" x2="-1.4" y2="1.3" width="0.127" layer="21" curve="-90"/>
+<smd name="P$1" x="2" y="0" dx="2" dy="2.4" layer="1"/>
+<smd name="P$2" x="-2" y="0" dx="2" dy="2.4" layer="1" rot="R180"/>
+<text x="-2.6" y="1.9" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-3" y="-3.1" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="XTAL3215" urn="urn:adsk.eagle:footprint:6240163/1" library_version="2">
+<wire x1="1.6" y1="-0.4172" x2="1.3172" y2="-0.7" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.3172" y1="-0.7" x2="-1.3172" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.3172" y1="-0.7" x2="-1.6" y2="-0.4172" width="0.127" layer="21" curve="-90"/>
+<wire x1="-1.6" y1="-0.4172" x2="-1.6" y2="0.4764" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="0.4764" x2="-1.3764" y2="0.7" width="0.127" layer="21" curve="-90"/>
+<wire x1="-1.3764" y1="0.7" x2="1.2838" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.2838" y1="0.7" x2="1.6" y2="0.3838" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.6" y1="0.3838" x2="1.6" y2="-0.4172" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="0.4" x2="1" y2="0.4" width="0.127" layer="21"/>
+<wire x1="1" y1="0.4" x2="1.3" y2="0.1" width="0.127" layer="21" curve="-89.961816"/>
+<wire x1="1.3" y1="0.1" x2="1.3" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-0.1" x2="1" y2="-0.4" width="0.127" layer="21" curve="-90"/>
+<wire x1="1" y1="-0.4" x2="-1" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.4" x2="-1.3" y2="-0.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="-1.3" y1="-0.2" x2="-1.3" y2="0.1" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="0.1" x2="-1.1" y2="0.4" width="0.127" layer="21" curve="-90.03821"/>
+<smd name="P$1" x="1.2" y="0" dx="1.1" dy="1.9" layer="1"/>
+<smd name="P$2" x="-1.2" y="0" dx="1.1" dy="1.9" layer="1" rot="R180"/>
+<text x="-2.3" y="-2.2" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.6" y="1.2" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="NX8045" urn="urn:adsk.eagle:package:6240640/1" type="box" library_version="2">
+<packageinstances>
+<packageinstance name="NX8045"/>
+</packageinstances>
+</package3d>
+<package3d name="NX5032" urn="urn:adsk.eagle:package:6240641/1" type="box" library_version="2">
+<packageinstances>
+<packageinstance name="NX5032"/>
+</packageinstances>
+</package3d>
+<package3d name="XTAL3215" urn="urn:adsk.eagle:package:6240808/1" type="box" library_version="2">
+<packageinstances>
+<packageinstance name="XTAL3215"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="XTAL" urn="urn:adsk.eagle:symbol:6239472/1" library_version="2">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="3.81" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="XTAL" urn="urn:adsk.eagle:component:6240973/1" prefix="X" uservalue="yes" library_version="2">
+<description>Low cost SMT crystals, no capacitors included
+&lt;p&gt;http://www.ladyada.net/library/eagle&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="XTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="NX8045" package="NX8045">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240640/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NX5032" package="NX5032">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240641/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-3.2X1.5" package="XTAL3215">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6240808/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13951,7 +14099,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="IC3" library="STM32F722RET6" deviceset="STM32F722RET6" device=""/>
 <part name="G1" library="battery" library_urn="urn:adsk.eagle:library:109" deviceset="CH23-1220LF" device="" package3d_urn="urn:adsk.eagle:package:4614/1"/>
 <part name="U$1" library="board" deviceset="USB-A-2_USB_USB-A-2" device=""/>
-<part name="X1" library="SMD-CRYSTAL-8MHZ-20PF-20PPM_2P-5.0X3.2MM_" deviceset="SMD-CRYSTAL-8MHZ-20PF-20PPM(2P-5.0X3.2MM)" device=""/>
+<part name="X1" library="SMD-CRYSTAL-8MHZ-20PF-20PPM_2P-5.0X3.2MM_" deviceset="SMD-CRYSTAL-8MHZ-20PF-20PPM(2P-5.0X3.2MM)" device="" value="SMD-CRYSTAL-25MHZ-20PF-20PPM(2P-5.0X3.2MM)"/>
 <part name="JP1" library="SparkFun-Retired" deviceset="JUMPER-2" device="PTH"/>
 <part name="F1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="0R"/>
 <part name="F2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="0R"/>
@@ -13960,13 +14108,13 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="C23" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="22p"/>
 <part name="C24" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="22p"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X2" library="SMD-CRYSTAL-8MHZ-20PF-20PPM_2P-5.0X3.2MM_" deviceset="SMD-CRYSTAL-8MHZ-20PF-20PPM(2P-5.0X3.2MM)" device="" value="SMD-CRYSTAL-32768KHZ-20PF-20PPM(2P-5.0X3.2MM)"/>
 <part name="JP3" library="SparkFun-Retired" deviceset="JUMPER-2" device="PTH"/>
 <part name="IC4" library="THS7314D" deviceset="THS7314D" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="100K"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="100K"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="100K"/>
 <part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
+<part name="X2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="XTAL" device="-3.2X1.5" package3d_urn="urn:adsk.eagle:package:6240808/1" value="32.768KHZ"/>
 </parts>
 <sheets>
 <sheet>
@@ -16320,9 +16468,9 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <attribute name="NAME" x="87.884" y="228.981" size="1.778" layer="95"/>
 <attribute name="VALUE" x="87.884" y="223.901" size="1.778" layer="96"/>
 </instance>
-<instance part="C15" gate="G$1" x="96.52" y="228.6" smashed="yes">
-<attribute name="NAME" x="98.044" y="228.981" size="1.778" layer="95"/>
-<attribute name="VALUE" x="98.044" y="223.901" size="1.778" layer="96"/>
+<instance part="C15" gate="G$1" x="96.52" y="226.06" smashed="yes" rot="R270">
+<attribute name="NAME" x="99.441" y="221.996" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="99.441" y="229.616" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="LED2" gate="G$1" x="22.86" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.288" y="72.644" size="1.778" layer="95"/>
@@ -16400,9 +16548,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="GND1" gate="1" x="170.18" y="50.8" smashed="yes" rot="R90">
 <attribute name="VALUE" x="172.72" y="48.26" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="X2" gate="G$1" x="147.32" y="50.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="144.77693125" y="48.25693125" size="1.27153125" layer="95" ratio="10" rot="R90"/>
-</instance>
 <instance part="JP3" gate="A" x="147.32" y="248.92" smashed="yes" rot="R270">
 <attribute name="NAME" x="147.32" y="250.19" size="1.778" layer="95"/>
 <attribute name="VALUE" x="147.32" y="243.205" size="1.778" layer="96"/>
@@ -16426,6 +16571,10 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="C25" gate="G$1" x="109.22" y="299.72" smashed="yes">
 <attribute name="NAME" x="110.744" y="300.101" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.744" y="295.021" size="1.778" layer="96"/>
+</instance>
+<instance part="X2" gate="G$1" x="147.32" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="143.51" y="48.26" size="1.27" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="152.4" y="46.99" size="1.27" layer="96" font="vector" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -16504,7 +16653,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="86.36" y1="223.52" x2="86.36" y2="218.44" width="0.1524" layer="91"/>
 <junction x="86.36" y="218.44"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="228.6" x2="96.52" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="220.98" x2="96.52" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="PWR" gate="G$1" pin="C"/>
 <wire x1="96.52" y1="218.44" x2="109.22" y2="218.44" width="0.1524" layer="91"/>
 <junction x="96.52" y="218.44"/>
@@ -16666,7 +16815,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="86.36" y1="231.14" x2="86.36" y2="233.68" width="0.1524" layer="91"/>
 <junction x="86.36" y="233.68"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="233.68" x2="91.44" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="233.68" x2="96.52" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="233.68" x2="104.14" y2="233.68" width="0.1524" layer="91"/>
 <junction x="96.52" y="233.68"/>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -17249,11 +17398,11 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="154.94" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="C23" gate="G$1" pin="1"/>
-<pinref part="X2" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="55.88" x2="147.32" y2="54.61" width="0.1524" layer="91"/>
 <label x="134.62" y="60.96" size="1.778" layer="95"/>
 <wire x1="147.32" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
 <junction x="147.32" y="55.88"/>
+<pinref part="X2" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="PC14-OSC32_IN"/>
@@ -17265,11 +17414,11 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <wire x1="154.94" y1="45.72" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="1"/>
-<pinref part="X2" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="45.72" x2="147.32" y2="46.99" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="45.72" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
 <junction x="147.32" y="45.72"/>
 <label x="134.62" y="43.18" size="1.778" layer="95"/>
+<pinref part="X2" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="PC15-OSC32_OUT"/>
