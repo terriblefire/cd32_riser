@@ -13908,7 +13908,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="C16" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100nF"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C14" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
-<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C9" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
 <part name="C8" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="100n"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
@@ -13930,17 +13930,17 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="C3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="10u"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
-<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
-<part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100nF"/>
+<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF"/>
+<part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100n"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1" value="LED"/>
 <part name="PWR" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0805" package3d_urn="urn:adsk.eagle:package:15830/1" value="LED"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="10k"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP3Q" device="" package3d_urn="urn:adsk.eagle:package:15460/1"/>
 <part name="JTAG" library="microbuilder" deviceset="HEADER-1X6" device="ROUND" value="JTAG"/>
 <part name="IC2" library="terriblefire" deviceset="XC9572XL-VQ64" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/2" value="4K7"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="10k"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BAT54" device="" package3d_urn="urn:adsk.eagle:package:43389/2"/>
 <part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
@@ -13966,6 +13966,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="100K"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="100K"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="100K"/>
+<part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -16422,6 +16423,10 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <attribute name="NAME" x="1.27" y="270.2814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="1.27" y="275.082" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="C25" gate="G$1" x="109.22" y="299.72" smashed="yes">
+<attribute name="NAME" x="110.744" y="300.101" size="1.778" layer="95"/>
+<attribute name="VALUE" x="110.744" y="295.021" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="A[0..31],AB,AB_EXT,AB_OUT,_ACTIVE,AG,AG_EXT,AGND,AG_OUT,AR,AR_EXT,AR_OUT,_AS,_AVEC,_BEER,_BLANK,BOOT,BUS_INT,CCK_B,CLK_17MHZ,_CPU_BG,_CPU_BR,CPUCLK_A,_CSYNC,D[0..31],DA_BCLK,DAC1,DAC2,DA_DATA,DA_LRCLK,DB,DG,DI,_DKRD,_DKWD,DKWE,DR,_DS,_DSACK_0,_DSACK_1,_EXP_BG,_EXP_BR,_EXT_AUDIO,_EXT_VIDEO,FC[0..2],_FIRE0,_FIRE1,GND,_HLT,_HSYNC,_INT2,_INT6,INTSIG[0..8],_IPL[0..2],_KB_CLOCK,_KB_DATA,_LED,LED,LEFT,LEFT_EXT,LSE_OSCIN,LSE_OSCOUT,_MUTE,NC,NRST,_NTSC,OSCIN,OSCOUT,PA9BOOT,PIXELCLK,_PIXELSW,_PIXELSW_EXT,_PUNT,PUNT_IN,PUNT_OUT,_RESET,RIGHT,RIGHT_EXT,_RMC,_RST,R_W,_RXD,SIZ[0..1],SJ[1..4],SPI2_CK,SPI2_MISO,SPI2_MOSI,SPI2_NSS,SWCLK,SWDIO,_TXD,UART4_RX,UART4_TX,UART5_RX,UART5_TX,USB1_DM,USB1_DP,USB2_DM,USB2_DP,VBAT,VCAP,VCC,VCC12V,VCC33,VDD,VGND,VSS,_VSYNC,XCLK,_XCLKEN">
@@ -16499,7 +16504,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="86.36" y1="223.52" x2="86.36" y2="218.44" width="0.1524" layer="91"/>
 <junction x="86.36" y="218.44"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="223.52" x2="96.52" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="228.6" x2="96.52" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="PWR" gate="G$1" pin="C"/>
 <wire x1="96.52" y1="218.44" x2="109.22" y2="218.44" width="0.1524" layer="91"/>
 <junction x="96.52" y="218.44"/>
@@ -16601,6 +16606,11 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="-20.32" y="279.4"/>
 <label x="-25.4" y="289.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="294.64" x2="109.22" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="292.1" x2="132.08" y2="292.1" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC33" class="0">
 <segment>
@@ -16656,7 +16666,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="86.36" y1="231.14" x2="86.36" y2="233.68" width="0.1524" layer="91"/>
 <junction x="86.36" y="233.68"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="233.68" x2="96.52" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="233.68" x2="91.44" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="233.68" x2="104.14" y2="233.68" width="0.1524" layer="91"/>
 <junction x="96.52" y="233.68"/>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -16778,6 +16788,10 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pinref part="IC4" gate="G$1" pin="VS_P"/>
 <wire x1="86.36" y1="287.02" x2="132.08" y2="287.02" width="0.1524" layer="91"/>
 <label x="104.14" y="287.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="302.26" x2="109.22" y2="309.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
